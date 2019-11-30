@@ -1,0 +1,75 @@
+\chapter{Einleitung}
+\label{cha:Einleitung}
+
+\section{Motivation}
+
+Mit dem Release von Docker wurde der Bereich
+der \emph{Development Operations}
+leichter zugänglich f\"ur Entwickler mit wenig oder gar keiner
+Erfahrungen in der System-Administration.
+
+Was aber bei dem Umgang mit Docker auch klar wurde, ist, dass Docker eben nicht
+alle Probleme des Betriebs von Software in der Cloud löst und so eben oft
+separate
+Lösungen gefunden werden müssen. Dies hat oft zu einer Reihe
+unterschiedlicher Lösungen geführt, die nicht immer ineinander
+gegriffen haben.
+
+Kubernetes stellt eine Lösung für viele dieser Probleme dar und
+ist dementsprechend zukunftsweisend f\"ur dieses Feld.
+
+Auch f\"ur einige der privaten Projekte des Autors w\"urde Kubernetes eine
+signifikante Verbesserung bedeuten, was der Anstoß f\"ur die Recherche dieses
+Themas war.
+
+Mit dieser Arbeit soll herausgefunden werden, wie eine Migration
+einer dieser bereits bestehenden
+Infrastrukturen zu Kubernetes funktioniert
+und inwiefern diese Sinn macht.
+
+\section{Wissenschaftliche Fragestellung}
+
+Die wissenschaftliche Fragestellung, die in dieser Arbeit behandelt werden
+soll, ist:
+Wie lässt sich nach aktuellem Stand der Technik eine Migration
+zu Kubernetes durchführen?
+Welche Komponenten sollen dafür kombiniert werden und welche Schwierigkeiten
+sind dabei zu überwinden?
+Welchen Mehrwert bietet letztlich das migrierte Cluster?
+
+\section{Rahmen dieser Arbeit}
+
+Als Case-Study soll ein existierendes Open Source Projekt auf Kubernetes migriert
+werden.
+
+Die Rahmenbedingungen des Betriebes von Kubernetes unter echten
+Produktionsbedingungen k\"onnen nicht immer akkurat nachgestellt werden,
+da die Serverkosten zu hoch wären, um sie
+im Rahmen dieser Arbeit finanzieren zu können.
+Sofern möglich, werden aber auch diese Aspekte simuliert.
+
+Neben der Software \emph{Kubernetes} wird es auch um andere Technologien gehen,
+da Kubernetes nicht isoliert betrachtet werden kann. Auch das Zusammenspiel
+mit dieser Peripherie-Software soll im Fokus dieser Arbeit liegen.
+Diese Arbeit steht also nicht stellvertretend für alle Möglichkeiten,
+ein Cluster auf Kubernetes aufzusetzen, sondern, um einen speziellen Fall, der
+sich haupts\"achich aus den Technologie-Entscheidungen ergibt.
+
+\section{Aufbau}
+
+Es sollen zu Beginn einige Anforderungen festgelegt werden, die im Ziel-System
+erfüllt sein sollen. Diese setzen sich zusammen aus Anforderungen, die generell für
+Produktions-Systeme gelten, aber auch Aspekte, die man sich von einem Wechsel zum neuen
+System erwartet.
+
+Weiter soll die Migration auf das Kubernetes Cluster,
+die hier durchgeführt wurde, vorgestellt werden. Hieraus leiten sich auch
+Erkenntnisse über Schwierigkeiten und Best-Practices ab, die in diesem Kapitel
+behandelt werden.
+Der finale Stand der Implementierung des Clusters
+wird anschließen anhand der Anforderungen bewertet.
+Abschließend wird diese Arbeit zusammengefasst,
+sowie potentielle Weiterentwicklungen in einem Ausblick aufgezeigt.
+
+Relevante Code-Beispiele sind in dieser Arbeit aufgef\"uhrt oder finden sich
+auf der CD/SD-Karte, welche dieser Arbeit als Anhang beigef\"ugt wurde.

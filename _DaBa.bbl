@@ -1,0 +1,1419 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{anyt}
+    \entry{aws}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Amazon Web Services}
+      \field{extraalpha}{1}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Amazon Web Services}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://aws.amazon.com/de/
+      \endverb
+    \endentry
+    \entry{cAdvisor}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{cAdvisor}
+      \field{extraalpha}{2}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{cAdvisor}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/google/cadvisor
+      \endverb
+    \endentry
+    \entry{coreos}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{CoreOS}
+      \field{extraalpha}{3}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{CoreOS}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://coreos.com/
+      \endverb
+    \endentry
+    \entry{digitalocean}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Digital Ocean}
+      \field{extraalpha}{4}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Digital Ocean}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.digitalocean.com/
+      \endverb
+    \endentry
+    \entry{docker}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Docker}
+      \field{extraalpha}{5}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Docker}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.docker.com/
+      \endverb
+    \endentry
+    \entry{etcd}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{etcd}
+      \field{extraalpha}{6}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{etcd}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://coreos.com/etcd
+      \endverb
+    \endentry
+    \entry{fluentd}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Fluentd}
+      \field{extraalpha}{7}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Fluentd}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://www.fluentd.org/
+      \endverb
+    \endentry
+    \entry{Grafana}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Grafana}
+      \field{extraalpha}{8}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Grafana}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://grafana.org/
+      \endverb
+    \endentry
+    \entry{heapster}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Heapster}
+      \field{extraalpha}{9}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Heapster}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/kubernetes/heapster
+      \endverb
+    \endentry
+    \entry{influxdb}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{InfluxDB}
+      \field{extraalpha}{10}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{InfluxDB}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/influxdata/influxdb
+      \endverb
+    \endentry
+    \entry{kibana}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Kibana}
+      \field{extraalpha}{11}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Kibana}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.elastic.co/products/kibana
+      \endverb
+    \endentry
+    \entry{logstash}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Logstash}
+      \field{extraalpha}{12}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Logstash}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.elastic.co/products/logstash
+      \endverb
+    \endentry
+    \entry{postgresql}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{PostgreSQL}
+      \field{extraalpha}{13}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{PostgreSQL}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.postgresql.org/
+      \endverb
+    \endentry
+    \entry{prometheus}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Prometheus}
+      \field{extraalpha}{14}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Prometheus}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://prometheus.io/
+      \endverb
+    \endentry
+    \entry{ruby}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Ruby}
+      \field{extraalpha}{15}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Ruby}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.ruby-lang.org/en/
+      \endverb
+    \endentry
+    \entry{terraform}{online}{}
+      \field{labelalpha}{17}
+      \field{sortinit}{1}
+      \field{labeltitle}{Terraform}
+      \field{extraalpha}{16}
+      \field{day}{07}
+      \field{month}{3}
+      \field{title}{Terraform}
+      \field{urlday}{07}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.terraform.io/
+      \endverb
+    \endentry
+    \entry{arch4scale}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=0c2e40c189e57a39a9a4df43040514b8}{Atchison}{A\bibinitperiod}{Lee}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0c2e40c189e57a39a9a4df43040514b8}{Atchison}{A\bibinitperiod}{Lee}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media, Inc.}%
+      }
+      \strng{namehash}{0c2e40c189e57a39a9a4df43040514b8}
+      \strng{fullhash}{0c2e40c189e57a39a9a4df43040514b8}
+      \field{labelalpha}{Atc16}
+      \field{sortinit}{A}
+      \field{labeltitle}{Architecting for Scale: High Availability for Your Growing Applications}
+      \field{isbn}{1491943424}
+      \field{title}{Architecting for Scale: High Availability for Your Growing Applications}
+      \field{year}{2016}
+    \endentry
+    \entry{bankingbackend}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=27def4a524850728a1b19b4965774474}{Beattie}{B\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=27def4a524850728a1b19b4965774474}{Beattie}{B\bibinitperiod}{Oliver}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{27def4a524850728a1b19b4965774474}
+      \strng{fullhash}{27def4a524850728a1b19b4965774474}
+      \field{labelalpha}{Bea16}
+      \field{sortinit}{B}
+      \field{labeltitle}{Building a Modern Bank Backend}
+      \field{day}{19}
+      \field{month}{9}
+      \field{title}{Building a Modern Bank Backend}
+      \field{urlday}{14}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://monzo.com/blog/2016/09/19/building-a-modern-bank-backend/
+      \endverb
+    \endentry
+    \entry{cloudtest}{book}{}
+      \name{labelname}{4}{}{%
+        {{hash=220afab5b3405595684e75295d84093a}{Blokland}{B\bibinitperiod}{Kees}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=b7de175b3825bc444b4bdc7da04c474f}{Mengerink}{M\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=287a4dc0ef3565c44e2d9b73875bb43b}{Pol}{P\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=f8f20f9c41579237366ca64e1732b8aa}{Rubruck}{R\bibinitperiod}{Doris}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=220afab5b3405595684e75295d84093a}{Blokland}{B\bibinitperiod}{Kees}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=b7de175b3825bc444b4bdc7da04c474f}{Mengerink}{M\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=287a4dc0ef3565c44e2d9b73875bb43b}{Pol}{P\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=f8f20f9c41579237366ca64e1732b8aa}{Rubruck}{R\bibinitperiod}{Doris}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt.verlag}%
+      }
+      \strng{namehash}{6671ba74a0976471ac1f77f2e0e31f4f}
+      \strng{fullhash}{1925669d484e1d499804bfae37cd94fb}
+      \field{labelalpha}{Blo+16}
+      \field{sortinit}{B}
+      \field{labeltitle}{Cloud-Services testen}
+      \field{isbn}{9783864903496}
+      \field{month}{2}
+      \field{title}{Cloud-Services testen}
+      \field{year}{2016}
+    \endentry
+    \entry{terravs}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=6595dcec8c9a2c58c01c8e6711cb5911}{Brikman}{B\bibinitperiod}{Yevgeniy}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6595dcec8c9a2c58c01c8e6711cb5911}{Brikman}{B\bibinitperiod}{Yevgeniy}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6595dcec8c9a2c58c01c8e6711cb5911}
+      \strng{fullhash}{6595dcec8c9a2c58c01c8e6711cb5911}
+      \field{labelalpha}{Bri16}
+      \field{sortinit}{B}
+      \field{labeltitle}{Why we use Terraform and not Chef, Puppet, Ansible, SaltStack, or CloudFormation}
+      \field{day}{26}
+      \field{month}{9}
+      \field{title}{Why we use Terraform and not Chef, Puppet, Ansible, SaltStack, or CloudFormation}
+      \field{urlday}{13}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://blog.gruntwork.io/why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation-7989dad2865c#.qem7cgl6d
+      \endverb
+    \endentry
+    \entry{CoreOSCluster}{online}{}
+      \name{labelname}{3}{}{%
+        {{hash=db04dcade4470b1a01eb36247e79e0da}{Boulle}{B\bibinitperiod}{Jonathan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=05b736c3a87bda308e5ecd543615f682}{Szumski}{S\bibinitperiod}{Rob}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a737246ab3ceb70be97c8827a22cd020}{Crawford}{C\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=db04dcade4470b1a01eb36247e79e0da}{Boulle}{B\bibinitperiod}{Jonathan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=05b736c3a87bda308e5ecd543615f682}{Szumski}{S\bibinitperiod}{Rob}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a737246ab3ceb70be97c8827a22cd020}{Crawford}{C\bibinitperiod}{Alex}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a4b40f37154ac63166a07f1fbf4f5b0c}
+      \strng{fullhash}{a4b40f37154ac63166a07f1fbf4f5b0c}
+      \field{labelalpha}{BSC17}
+      \field{sortinit}{B}
+      \field{labeltitle}{CoreOS Container Linux cluster architectures}
+      \field{month}{1}
+      \field{note}{Commit: 853e5358f32e34b36a31914a7d0d9325e0fb3fe8}
+      \field{title}{CoreOS Container Linux cluster architectures}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/coreos/docs/blob/master/os/cluster-architectures.md
+      \endverb
+    \endentry
+    \entry{borg}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=f81bf4ac2381d4b3bdc662e5d904ceb8}{Burns}{B\bibinitperiod}{Brendan}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=a34e9967731609a76f8a920bf98d3660}{Grant}{G\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3b7c6d08ef992f50cc6cb714826cab85}{Oppenheimer}{O\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=781eec3551b6a48285790e48b277e991}{Brewer}{B\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=5f3c579f3b21ba42d76c7a3ee89b6ca2}{Wilkes}{W\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=f81bf4ac2381d4b3bdc662e5d904ceb8}{Burns}{B\bibinitperiod}{Brendan}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=a34e9967731609a76f8a920bf98d3660}{Grant}{G\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3b7c6d08ef992f50cc6cb714826cab85}{Oppenheimer}{O\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=781eec3551b6a48285790e48b277e991}{Brewer}{B\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=5f3c579f3b21ba42d76c7a3ee89b6ca2}{Wilkes}{W\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{17b433ded7ffa09f701064de70089d7b}
+      \strng{fullhash}{d931dde8d2c3b5c47067a310bcd5acef}
+      \field{labelalpha}{Bur+16}
+      \field{sortinit}{B}
+      \field{labeltitle}{Borg, Omega, and Kubernetes}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Commun. ACM}
+      \field{month}{04}
+      \field{number}{5}
+      \field{title}{Borg, Omega, and Kubernetes}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{pages}{50\bibrangedash 57}
+      \verb{doi}
+      \verb 10.1145/2890784
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/2890784
+      \endverb
+    \endentry
+    \entry{k8srepo}{online}{}
+      \true{morelabelname}
+      \name{labelname}{2}{}{%
+        {{hash=6e063a83a59041f6433a3c0d599c4ead}{Coleman}{C\bibinitperiod}{Clayton}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=f81bf4ac2381d4b3bdc662e5d904ceb8}{Burns}{B\bibinitperiod}{Brendan}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{2}{}{%
+        {{hash=6e063a83a59041f6433a3c0d599c4ead}{Coleman}{C\bibinitperiod}{Clayton}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=f81bf4ac2381d4b3bdc662e5d904ceb8}{Burns}{B\bibinitperiod}{Brendan}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{15bd270041d2b05a543b72d5e84fa117}
+      \strng{fullhash}{1c8255a93de9261fe408f4b011aed0ed}
+      \field{labelalpha}{C+17}
+      \field{sortinit}{C}
+      \field{labeltitle}{kubernetes}
+      \field{day}{27}
+      \field{month}{1}
+      \field{title}{kubernetes}
+      \field{urlday}{27}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/kubernetes/kubernetes
+      \endverb
+    \endentry
+    \entry{duvall}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=8e52f395fb16e341a27391cb14ce3c0e}{Duvall}{D\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=42f9d1372802904e168d1b1b1906d5ef}{Matyas}{M\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=88408733a56a55fe86fa2efabe6275e9}{Glover}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=8e52f395fb16e341a27391cb14ce3c0e}{Duvall}{D\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=42f9d1372802904e168d1b1b1906d5ef}{Matyas}{M\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=88408733a56a55fe86fa2efabe6275e9}{Glover}{G\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{630ad48ff99f4bd770d319fa60f4c2f8}
+      \strng{fullhash}{630ad48ff99f4bd770d319fa60f4c2f8}
+      \field{labelalpha}{DMG07}
+      \field{sortinit}{D}
+      \field{labeltitle}{Continuous Integration: Improving Software Quality and Reducing Risk}
+      \field{day}{9}
+      \field{isbn}{9780321336385}
+      \field{month}{7}
+      \field{title}{Continuous Integration: Improving Software Quality and Reducing Risk}
+      \field{year}{2007}
+    \endentry
+    \entry{gitflow}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=eb8c083d0048e06e606261e69e003f6e}{Driessen}{D\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=eb8c083d0048e06e606261e69e003f6e}{Driessen}{D\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb8c083d0048e06e606261e69e003f6e}
+      \strng{fullhash}{eb8c083d0048e06e606261e69e003f6e}
+      \field{labelalpha}{Dri10}
+      \field{sortinit}{D}
+      \field{labeltitle}{A successful Git branching model}
+      \field{day}{5}
+      \field{month}{1}
+      \field{title}{A successful Git branching model}
+      \field{urlday}{11}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://nvie.com/posts/a-successful-git-branching-model/
+      \endverb
+    \endentry
+    \entry{everythingfails}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=3e16b4b40d3a9e9375f1c548d891b61f}{Gillam}{G\bibinitperiod}{Lee}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=cd1e4e648b0074e1d1f4427d70297b0a}{Li}{L\bibinitperiod}{Bin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1f3af4fc5beba4417e467b7ec0fbf658}{O'Loughlin}{O\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=3e16b4b40d3a9e9375f1c548d891b61f}{Gillam}{G\bibinitperiod}{Lee}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=cd1e4e648b0074e1d1f4427d70297b0a}{Li}{L\bibinitperiod}{Bin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=1f3af4fc5beba4417e467b7ec0fbf658}{O'Loughlin}{O\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3fb72a20455dffde6208a45f936ab294}
+      \strng{fullhash}{3fb72a20455dffde6208a45f936ab294}
+      \field{labelalpha}{GLO12}
+      \field{sortinit}{G}
+      \field{labeltitle}{Adding Cloud Performance to Service Level Agreements.}
+      \field{howpublished}{\url{http://urn.fi/URN:NBN:fi:jyu-201512093942}}
+      \field{journaltitle}{Department of Computing, University of Surrey, Guildford, United Kingdom}
+      \field{title}{Adding Cloud Performance to Service Level Agreements.}
+      \field{year}{2012}
+    \endentry
+    \entry{elasticsearch}{online}{}
+      \name{labelname}{4}{}{%
+        {{hash=a1c124a0ac882be323183f26682aa55d}{Gormley}{G\bibinitperiod}{Clinton}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=c3fba7c3cb4ccbf1ab06138494e4a5d8}{Everett}{E\bibinitperiod}{Nik}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=b06d0d4a1a3e4a711717ec9d48297fa2}{Grand}{G\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=3335446c72d50f8c134455dd2217ceea}{Ernst}{E\bibinitperiod}{Ryan}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=a1c124a0ac882be323183f26682aa55d}{Gormley}{G\bibinitperiod}{Clinton}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=c3fba7c3cb4ccbf1ab06138494e4a5d8}{Everett}{E\bibinitperiod}{Nik}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=b06d0d4a1a3e4a711717ec9d48297fa2}{Grand}{G\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=3335446c72d50f8c134455dd2217ceea}{Ernst}{E\bibinitperiod}{Ryan}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{20a07a5ea06866085507f6deb2cdc50b}
+      \strng{fullhash}{1ba6a5457293026e61ff59d6bf90cb2b}
+      \field{labelalpha}{Gor+17}
+      \field{sortinit}{G}
+      \field{labeltitle}{Getting Started}
+      \field{day}{20}
+      \field{month}{1}
+      \field{note}{Commit: ee798eaaa33c966a7743e130305ccbda26cf4036}
+      \field{title}{Getting Started}
+      \field{urlday}{29}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://raw.githubusercontent.com/elastic/elasticsearch/5.2/docs/reference/getting-started.asciidoc
+      \endverb
+    \endentry
+    \entry{gupta}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=31dd6a11186fdd68b83212c4b141a35f}{Gupta}{G\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=31dd6a11186fdd68b83212c4b141a35f}{Gupta}{G\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{31dd6a11186fdd68b83212c4b141a35f}
+      \strng{fullhash}{31dd6a11186fdd68b83212c4b141a35f}
+      \field{labelalpha}{Gup17}
+      \field{sortinit}{G}
+      \field{labeltitle}{Docker	and	Kubernetes	Recipes}
+      \field{day}{11}
+      \field{month}{1}
+      \field{note}{Commit: e74039c3398869ad5152933ff07011de5dc98ce3}
+      \field{title}{Docker	and	Kubernetes	Recipes}
+      \field{urlday}{02}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/javaee-samples/docker-java/blob/master/slides/docker-kubernetes-recipes.pdf
+      \endverb
+    \endentry
+    \entry{cloudmigra}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=b2e1e4af5cafb274afbf4983d73aa9eb}{Höllwarth}{H\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b2e1e4af5cafb274afbf4983d73aa9eb}{Höllwarth}{H\bibinitperiod}{Tobias}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {mitp}%
+      }
+      \strng{namehash}{b2e1e4af5cafb274afbf4983d73aa9eb}
+      \strng{fullhash}{b2e1e4af5cafb274afbf4983d73aa9eb}
+      \field{labelalpha}{Höl13}
+      \field{sortinit}{H}
+      \field{labeltitle}{Cloud Migration}
+      \field{isbn}{3826694589}
+      \field{month}{10}
+      \field{title}{Cloud Migration}
+      \field{year}{2013}
+    \endentry
+    \entry{ThePragm}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=10383d05f32f2a21518b493a3c546e5c}{Hunt}{H\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=b5eb4ac16368112932ff36772cb0b0b5}{Thomas}{T\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=10383d05f32f2a21518b493a3c546e5c}{Hunt}{H\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=b5eb4ac16368112932ff36772cb0b0b5}{Thomas}{T\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{6551e2d8a523620fdffb6fe4053ca3d5}
+      \strng{fullhash}{6551e2d8a523620fdffb6fe4053ca3d5}
+      \field{labelalpha}{HT99}
+      \field{sortinit}{H}
+      \field{labeltitle}{The Pragmatic Programmer: From Journeyman to Master}
+      \field{isbn}{020161622X}
+      \field{title}{The Pragmatic Programmer: From Journeyman to Master}
+      \field{year}{1999}
+    \endentry
+    \entry{dockersecurity}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=f13d07e424dfd959dbca10a0a1e7081e}{Inc.}{I\bibinitperiod}{Docker}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f13d07e424dfd959dbca10a0a1e7081e}{Inc.}{I\bibinitperiod}{Docker}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f13d07e424dfd959dbca10a0a1e7081e}
+      \strng{fullhash}{f13d07e424dfd959dbca10a0a1e7081e}
+      \field{labelalpha}{Inc15}
+      \field{sortinit}{I}
+      \field{labeltitle}{Introduction to Container Security}
+      \field{howpublished}{\url{https://www.docker.com/sites/default/files/WP_IntrotoContainerSecurity_08.19.2016.pdf}}
+      \field{month}{8}
+      \field{title}{Introduction to Container Security}
+      \field{year}{2015}
+    \endentry
+    \entry{AwsEbs}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32605dfb13c97681d0ca982ffc67060b}
+      \strng{fullhash}{32605dfb13c97681d0ca982ffc67060b}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{I}
+      \field{labeltitle}{Amazon EBS Volume Types - Amazon Elastic Compute Cloud}
+      \field{extraalpha}{1}
+      \field{title}{Amazon EBS Volume Types - Amazon Elastic Compute Cloud}
+      \field{urlday}{20}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html
+      \endverb
+    \endentry
+    \entry{AwsCloudConfig}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32605dfb13c97681d0ca982ffc67060b}
+      \strng{fullhash}{32605dfb13c97681d0ca982ffc67060b}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{I}
+      \field{labeltitle}{Instance Metadata and User Data - Amazon Elastic Compute Cloud}
+      \field{extraalpha}{2}
+      \field{title}{Instance Metadata and User Data - Amazon Elastic Compute Cloud}
+      \field{urlday}{20}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
+      \endverb
+    \endentry
+    \entry{Awst2}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32605dfb13c97681d0ca982ffc67060b}
+      \strng{fullhash}{32605dfb13c97681d0ca982ffc67060b}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{I}
+      \field{labeltitle}{T2 Instances - Amazon Elastic Compute Cloud}
+      \field{extraalpha}{3}
+      \field{title}{T2 Instances - Amazon Elastic Compute Cloud}
+      \field{urlday}{22}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html
+      \endverb
+    \endentry
+    \entry{AwsVpc}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32605dfb13c97681d0ca982ffc67060b}{Inc.}{I\bibinitperiod}{Amazon\bibnamedelimb Web\bibnamedelima Services}{A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{32605dfb13c97681d0ca982ffc67060b}
+      \strng{fullhash}{32605dfb13c97681d0ca982ffc67060b}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{I}
+      \field{labeltitle}{VPCs and Subnets - Amazon Virtual Private Cloud}
+      \field{extraalpha}{4}
+      \field{title}{VPCs and Subnets - Amazon Virtual Private Cloud}
+      \field{urlday}{15}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html
+      \endverb
+    \endentry
+    \entry{DockerHub}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f13d07e424dfd959dbca10a0a1e7081e}{Inc.}{I\bibinitperiod}{Docker}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f13d07e424dfd959dbca10a0a1e7081e}{Inc.}{I\bibinitperiod}{Docker}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f13d07e424dfd959dbca10a0a1e7081e}
+      \strng{fullhash}{f13d07e424dfd959dbca10a0a1e7081e}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{I}
+      \field{labeltitle}{Official repositories on Docker Hub - Docker}
+      \field{extraalpha}{5}
+      \field{title}{Official repositories on Docker Hub - Docker}
+      \field{urlday}{10}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://docs.docker.com/docker-hub/official_repos/
+      \endverb
+    \endentry
+    \entry{sslred}{online}{}
+      \true{morelabelname}
+      \name{labelname}{2}{}{%
+        {{hash=4ac7bd57e0767e51595300a7d6a66675}{Katz}{K\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=4167c0a5b20b9dfb1fd2184666a9f7ba}{Brito\bibnamedelima Fontes}{B\bibinitperiod\bibinitdelim F\bibinitperiod}{Manuel\bibnamedelima Alejandro}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{2}{}{%
+        {{hash=4ac7bd57e0767e51595300a7d6a66675}{Katz}{K\bibinitperiod}{Ricardo}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=4167c0a5b20b9dfb1fd2184666a9f7ba}{Brito\bibnamedelima Fontes}{B\bibinitperiod\bibinitdelim F\bibinitperiod}{Manuel\bibnamedelima Alejandro}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{2f36b55c74e303c0d9652330d80ff40f}
+      \strng{fullhash}{f16550ce23763e1cf4cd0b6d25317533}
+      \field{labelalpha}{K+17}
+      \field{sortinit}{K}
+      \field{labeltitle}{configuration.md}
+      \field{day}{25}
+      \field{month}{2}
+      \field{note}{Commit: a342c0bce378bd7089601f2eaa3c3d84ca0f0d27}
+      \field{title}{configuration.md}
+      \field{urlday}{02}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/kubernetes/ingress/blob/master/controllers/nginx/configuration.md
+      \endverb
+    \endentry
+    \entry{multicodenodejs}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=5a68b3e6019f0d044710d74b43c1813b}{Koç}{K\bibinitperiod}{Dursun}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5a68b3e6019f0d044710d74b43c1813b}{Koç}{K\bibinitperiod}{Dursun}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5a68b3e6019f0d044710d74b43c1813b}
+      \strng{fullhash}{5a68b3e6019f0d044710d74b43c1813b}
+      \field{labelalpha}{Koç15}
+      \field{sortinit}{K}
+      \field{labeltitle}{Multicore Programming in Node.js}
+      \field{day}{9}
+      \field{month}{11}
+      \field{title}{Multicore Programming in Node.js}
+      \field{urlday}{03}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://dzone.com/articles/multicore-programming-in-nodejs
+      \endverb
+    \endentry
+    \entry{steph}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=6541d3e0eef54ba49f5e07e4410880dc}{Lindauer}{L\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6541d3e0eef54ba49f5e07e4410880dc}{Lindauer}{L\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6541d3e0eef54ba49f5e07e4410880dc}
+      \strng{fullhash}{6541d3e0eef54ba49f5e07e4410880dc}
+      \field{labelalpha}{Lin16}
+      \field{sortinit}{L}
+      \field{labeltitle}{terra-aws-core-kube}
+      \field{month}{12}
+      \field{title}{terra-aws-core-kube}
+      \field{urlday}{03}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://github.com/stephanlindauer/terra-aws-core-kube
+      \endverb
+    \endentry
+    \entry{etcdhardware}{online}{}
+      \name{labelname}{2}{}{%
+        {{hash=09e1a64c667557dd7866bc4e66d193ce}{Li}{L\bibinitperiod}{Xiang}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=0c462273b56f35a9b8bca4e1f229777c}{Philips}{P\bibinitperiod}{Brandon}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=09e1a64c667557dd7866bc4e66d193ce}{Li}{L\bibinitperiod}{Xiang}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=0c462273b56f35a9b8bca4e1f229777c}{Philips}{P\bibinitperiod}{Brandon}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1d78a6c8e69cc11c914793a3a7dcf6bf}
+      \strng{fullhash}{1d78a6c8e69cc11c914793a3a7dcf6bf}
+      \field{labelalpha}{LP16}
+      \field{sortinit}{L}
+      \field{labeltitle}{Hardware recommendations}
+      \field{month}{12}
+      \field{note}{Commit: 52e3dc5eb9e369dab9f274b204ef1bef364f8510}
+      \field{title}{Hardware recommendations}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://github.com/coreos/etcd/blob/master/Documentation/op-guide/hardware.md
+      \endverb
+    \endentry
+    \entry{Makam201602}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=0d039aef5190473dff03f2ebbd429e5a}{Makam}{M\bibinitperiod}{Sreenivas}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0d039aef5190473dff03f2ebbd429e5a}{Makam}{M\bibinitperiod}{Sreenivas}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{0d039aef5190473dff03f2ebbd429e5a}
+      \strng{fullhash}{0d039aef5190473dff03f2ebbd429e5a}
+      \field{labelalpha}{Mak16}
+      \field{sortinit}{M}
+      \field{labeltitle}{Mastering CoreOS}
+      \field{isbn}{9781785288128}
+      \field{month}{2}
+      \field{title}{Mastering CoreOS}
+      \field{year}{2016}
+    \endentry
+    \entry{curator}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=da2d7d155321eee47bbd3fa0bd82c89c}{Mildenstein}{M\bibinitperiod}{Aaron}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=da2d7d155321eee47bbd3fa0bd82c89c}{Mildenstein}{M\bibinitperiod}{Aaron}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{da2d7d155321eee47bbd3fa0bd82c89c}
+      \strng{fullhash}{da2d7d155321eee47bbd3fa0bd82c89c}
+      \field{labelalpha}{Mil14}
+      \field{sortinit}{M}
+      \field{labeltitle}{Curator: Tending your time-series indices}
+      \field{day}{20}
+      \field{month}{1}
+      \field{title}{Curator: Tending your time-series indices}
+      \field{urlday}{24}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.elastic.co/blog/curator-tending-your-time-series-indices
+      \endverb
+    \endentry
+    \entry{networkingBla}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=b00c5b79cf41250255f05f7d88fd29de}{Marmol}{M\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=bd56849b69cbdb4ebd86825361c103cb}{Jnagal}{J\bibinitperiod}{Rohit}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7a42caba0255553de40a3f22078d3958}{Hockin}{H\bibinitperiod}{Tim}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=b00c5b79cf41250255f05f7d88fd29de}{Marmol}{M\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=bd56849b69cbdb4ebd86825361c103cb}{Jnagal}{J\bibinitperiod}{Rohit}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=7a42caba0255553de40a3f22078d3958}{Hockin}{H\bibinitperiod}{Tim}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Ottawa, On, Canada}%
+      }
+      \strng{namehash}{59b45d8708520667bc79e26cdeae7ca5}
+      \strng{fullhash}{59b45d8708520667bc79e26cdeae7ca5}
+      \field{labelalpha}{MJH15}
+      \field{sortinit}{M}
+      \field{labeltitle}{Networking in Containers and Container Clusters}
+      \field{booktitle}{Proceedings of netdev 0.1}
+      \field{title}{Networking in Containers and Container Clusters}
+      \field{year}{2015}
+    \endentry
+    \entry{etcdclustersize}{online}{}
+      \name{labelname}{4}{}{%
+        {{hash=b718839cdb1ff8c0f8685ca4d2f9124e}{Mohammed}{M\bibinitperiod}{Raoof}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=92403c4cb282b668f051327dde79942c}{Lee}{L\bibinitperiod}{Gyu-Ho}{G\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=da4b166766d5de20d07e8b6a8bab8985}{Romano}{R\bibinitperiod}{Anthony}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=9113b443025647410b7bd1e24cf14f70}{Yagaty}{Y\bibinitperiod}{Ajit}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=b718839cdb1ff8c0f8685ca4d2f9124e}{Mohammed}{M\bibinitperiod}{Raoof}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=92403c4cb282b668f051327dde79942c}{Lee}{L\bibinitperiod}{Gyu-Ho}{G\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=da4b166766d5de20d07e8b6a8bab8985}{Romano}{R\bibinitperiod}{Anthony}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=9113b443025647410b7bd1e24cf14f70}{Yagaty}{Y\bibinitperiod}{Ajit}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9d5cd0c5c7a7b7267a79af39e276d053}
+      \strng{fullhash}{462e9b450da5ea19dc08a63d8285ff86}
+      \field{labelalpha}{Moh+16}
+      \field{sortinit}{M}
+      \field{labeltitle}{Hardware recommendations}
+      \field{month}{6}
+      \field{note}{Commit: 37ac90c419f39f42dc5c476dce0182b2d1b2bd49}
+      \field{title}{Hardware recommendations}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://github.com/coreos/etcd/blob/v3.0.15/Documentation/v2/admin_guide.md
+      \endverb
+    \endentry
+    \entry{k8sscheduler}{online}{}
+      \name{labelname}{7}{}{%
+        {{hash=2a4cfc38628c3a68a0c7d8b9aa045d18}{Mulhausen}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b89b7d1c4f6bc6f8ef46d026ece874e7}{Balter}{B\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=6f6ddc080e95c9c3d30e9ec52aac8d79}{Ramanathan}{R\bibinitperiod}{Anirudh}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6cd682cec5f50974551c6fab45bbafb9}{Wittrock}{W\bibinitperiod}{Phillip}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f7cd70b6029d84425075466d7618aae0}{Jindal}{J\bibinitperiod}{Nikhil}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=ab4b144d1e1f0e36b76dc0a7035519b5}{Szulik}{S\bibinitperiod}{Maciej}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=19073db366233c9b55829a67fe47f5a0}{Kuo}{K\bibinitperiod}{Janet}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=2a4cfc38628c3a68a0c7d8b9aa045d18}{Mulhausen}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b89b7d1c4f6bc6f8ef46d026ece874e7}{Balter}{B\bibinitperiod}{Ben}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=6f6ddc080e95c9c3d30e9ec52aac8d79}{Ramanathan}{R\bibinitperiod}{Anirudh}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=6cd682cec5f50974551c6fab45bbafb9}{Wittrock}{W\bibinitperiod}{Phillip}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=f7cd70b6029d84425075466d7618aae0}{Jindal}{J\bibinitperiod}{Nikhil}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=ab4b144d1e1f0e36b76dc0a7035519b5}{Szulik}{S\bibinitperiod}{Maciej}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=19073db366233c9b55829a67fe47f5a0}{Kuo}{K\bibinitperiod}{Janet}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a9f23248d0ce17d555544d66ea1775e8}
+      \strng{fullhash}{b01d8d4a82f82e64d69ffbc232c373c5}
+      \field{labelalpha}{Mul+16}
+      \field{sortinit}{M}
+      \field{labeltitle}{kube-scheduler}
+      \field{month}{12}
+      \field{note}{Commit: 2cc0485a7093c3d0e0fe6c77c62169234f66f826}
+      \field{title}{kube-scheduler}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/admin/kube-scheduler.md
+      \endverb
+    \endentry
+    \entry{DockerInAction}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=f45e533bc657a81bae5f4c0be11f0b7a}{Nickoloff}{N\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f45e533bc657a81bae5f4c0be11f0b7a}{Nickoloff}{N\bibinitperiod}{Jeff}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications Co}%
+      }
+      \strng{namehash}{f45e533bc657a81bae5f4c0be11f0b7a}
+      \strng{fullhash}{f45e533bc657a81bae5f4c0be11f0b7a}
+      \field{labelalpha}{Nic16}
+      \field{sortinit}{N}
+      \field{labeltitle}{Docker in Action}
+      \field{isbn}{9781633430235}
+      \field{title}{Docker in Action}
+      \field{year}{2016}
+    \endentry
+    \entry{Raft}{inproceedings}{}
+      \name{labelname}{2}{}{%
+        {{hash=7cd6def2de460a2efcd2ef9fb4ce7f68}{Ongaro}{O\bibinitperiod}{Diego}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=ecac04ff101bba23ba67c9332853d538}{Ousterhout}{O\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=7cd6def2de460a2efcd2ef9fb4ce7f68}{Ongaro}{O\bibinitperiod}{Diego}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=ecac04ff101bba23ba67c9332853d538}{Ousterhout}{O\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{fullhash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \field{labelalpha}{OO14}
+      \field{sortinit}{O}
+      \field{labeltitle}{In Search of an Understandable Consensus Algorithm}
+      \field{booktitle}{2014 USENIX Annual Technical Conference (USENIX ATC 14)}
+      \field{isbn}{978-1-931971-10-2}
+      \field{title}{In Search of an Understandable Consensus Algorithm}
+      \field{year}{2014}
+      \field{pages}{305\bibrangedash 319}
+      \verb{url}
+      \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
+      \endverb
+    \endentry
+    \entry{contrib}{online}{}
+      \name{labelname}{4}{}{%
+        {{hash=0a23dd26253a8c73d7ca359f03870a5b}{Paris}{P\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=4167c0a5b20b9dfb1fd2184666a9f7ba}{Brito\bibnamedelima Fontes}{B\bibinitperiod\bibinitdelim F\bibinitperiod}{Manuel\bibnamedelima Alejandro}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+        {{hash=77a8db874c13780e45aaa2eb35cbd640}{Wielgus}{W\bibinitperiod}{Marcin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=005dd718f3b829bab9e7e7714b3804a5}{Smith}{S\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=0a23dd26253a8c73d7ca359f03870a5b}{Paris}{P\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=4167c0a5b20b9dfb1fd2184666a9f7ba}{Brito\bibnamedelima Fontes}{B\bibinitperiod\bibinitdelim F\bibinitperiod}{Manuel\bibnamedelima Alejandro}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+        {{hash=77a8db874c13780e45aaa2eb35cbd640}{Wielgus}{W\bibinitperiod}{Marcin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=005dd718f3b829bab9e7e7714b3804a5}{Smith}{S\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c520aaefeafb75fd7a5d9a29866e29e7}
+      \strng{fullhash}{f7b8e6ee95bc3fd919b196d83aecc494}
+      \field{labelalpha}{Par+17}
+      \field{sortinit}{P}
+      \field{labeltitle}{kubernetes/contrib}
+      \field{month}{2}
+      \field{note}{Commit: 4dd1aa773d95b1d7e88b1d55db57cd1a4fcdcc58}
+      \field{title}{kubernetes/contrib}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/kubernetes/contrib/commit/4dd1aa773d95b1d7e88b1d55db57cd1a4fcdcc58
+      \endverb
+    \endentry
+    \entry{did}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=c57d60e5bd0cdf6fee1339f990d9d591}{Petazzoni}{P\bibinitperiod}{Jérôme}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c57d60e5bd0cdf6fee1339f990d9d591}{Petazzoni}{P\bibinitperiod}{Jérôme}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c57d60e5bd0cdf6fee1339f990d9d591}
+      \strng{fullhash}{c57d60e5bd0cdf6fee1339f990d9d591}
+      \field{labelalpha}{Pet}
+      \field{sortinit}{P}
+      \field{labeltitle}{Using Docker-in-Docker for your CI or testing environment? Think twice.}
+      \field{title}{Using Docker-in-Docker for your CI or testing environment? Think twice.}
+      \field{urlday}{11}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
+      \endverb
+    \endentry
+    \entry{CidrRfc}{online}{}
+      \name{labelname}{5}{}{%
+        {{hash=2d918335f0fdc2180dc3053be79289d0}{Rekhter}{R\bibinitperiod}{Yavok}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=2eab86de22c13c5c9175907cf9bdc147}{Moskowitz}{M\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f48e8a65bd72d8d71da83b722ce8f11a}{Karrenberg}{K\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=c62a4627275f071270231ccae5970b1d}{Groot}{G\bibinitperiod}{Geert\bibnamedelima Jan}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+        {{hash=12e1a2168e1cb3146b07e03d850a3d7b}{Lear}{L\bibinitperiod}{Eliot}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=2d918335f0fdc2180dc3053be79289d0}{Rekhter}{R\bibinitperiod}{Yavok}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=2eab86de22c13c5c9175907cf9bdc147}{Moskowitz}{M\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=f48e8a65bd72d8d71da83b722ce8f11a}{Karrenberg}{K\bibinitperiod}{Daniel}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=c62a4627275f071270231ccae5970b1d}{Groot}{G\bibinitperiod}{Geert\bibnamedelima Jan}{G\bibinitperiod\bibinitdelim J\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+        {{hash=12e1a2168e1cb3146b07e03d850a3d7b}{Lear}{L\bibinitperiod}{Eliot}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{20bce038be184d14af2a43d983f19697}
+      \strng{fullhash}{82858ae339fea5feea35c4a4875405da}
+      \field{labelalpha}{Rek+96}
+      \field{sortinit}{R}
+      \field{labeltitle}{Address Allocation for Private Internets}
+      \field{month}{2}
+      \field{title}{Address Allocation for Private Internets}
+      \field{urlday}{30}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{1996}
+      \verb{url}
+      \verb https://tools.ietf.org/html/rfc1918
+      \endverb
+    \endentry
+    \entry{awsEU}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=d42d62d6d3bfc2b889e4616093f39333}{Services}{S\bibinitperiod}{Amazon\bibnamedelima Web}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d42d62d6d3bfc2b889e4616093f39333}{Services}{S\bibinitperiod}{Amazon\bibnamedelima Web}{A\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d42d62d6d3bfc2b889e4616093f39333}
+      \strng{fullhash}{d42d62d6d3bfc2b889e4616093f39333}
+      \field{labelalpha}{Ser15}
+      \field{sortinit}{S}
+      \field{labeltitle}{EU Datenschutz Whitepaper}
+      \field{howpublished}{\url{https://d0.awsstatic.com/whitepapers/compliance/De_Whitepapers/AWS_EU_Data_Protection_Whitepaper_DE.pdf}}
+      \field{month}{10}
+      \field{title}{EU Datenschutz Whitepaper}
+      \field{year}{2015}
+    \endentry
+    \entry{dockersec}{online}{}
+      \true{morelabelname}
+      \name{labelname}{1}{}{%
+        {{hash=9b702d84a90e05bd3960c21fe762fef8}{Stanley-Jones}{S\bibinithyphendelim J\bibinitperiod}{Misty}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=9b702d84a90e05bd3960c21fe762fef8}{Stanley-Jones}{S\bibinithyphendelim J\bibinitperiod}{Misty}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{abb4c5acf004b07321223fc7113fad09}
+      \strng{fullhash}{abb4c5acf004b07321223fc7113fad09}
+      \field{labelalpha}{Sta+17}
+      \field{sortinit}{S}
+      \field{labeltitle}{Docker security}
+      \field{extraalpha}{1}
+      \field{day}{20}
+      \field{month}{2}
+      \field{title}{Docker security}
+      \field{urlday}{03}
+      \field{urlmonth}{03}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://docs.docker.com/engine/security/security/
+      \endverb
+    \endentry
+    \entry{reg}{online}{}
+      \name{labelname}{4}{}{%
+        {{hash=9b702d84a90e05bd3960c21fe762fef8}{Stanley-Jones}{S\bibinithyphendelim J\bibinitperiod}{Misty}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b99f83908ca0b843df5d66f9149c48ad}{Fernandes}{F\bibinitperiod}{Joao}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2a4cfc38628c3a68a0c7d8b9aa045d18}{Mulhausen}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9c6b5877ce7d58bc36dc983642717ea}{Duermael}{D\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=9b702d84a90e05bd3960c21fe762fef8}{Stanley-Jones}{S\bibinithyphendelim J\bibinitperiod}{Misty}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b99f83908ca0b843df5d66f9149c48ad}{Fernandes}{F\bibinitperiod}{Joao}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=2a4cfc38628c3a68a0c7d8b9aa045d18}{Mulhausen}{M\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d9c6b5877ce7d58bc36dc983642717ea}{Duermael}{D\bibinitperiod}{Adrien}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{abb4c5acf004b07321223fc7113fad09}
+      \strng{fullhash}{7bea5edfe3d2f6c1687da20eb3beba5c}
+      \field{labelalpha}{Sta+17}
+      \field{sortinit}{S}
+      \field{labeltitle}{Docker Registry}
+      \field{extraalpha}{2}
+      \field{day}{13}
+      \field{month}{1}
+      \field{note}{Commit: 5008e56c7da23ec975f63b666d677087081d856b}
+      \field{title}{Docker Registry}
+      \field{urlday}{12}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/docker/docker.github.io/blob/master/registry/index.md
+      \endverb
+    \endentry
+    \entry{masteroslo}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{hash=e88b8e53f7412d1fdf7ed65e1f07615c}{Steinholt}{S\bibinitperiod}{Ravn\bibnamedelima Kristinesønn}{R\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e88b8e53f7412d1fdf7ed65e1f07615c}{Steinholt}{S\bibinitperiod}{Ravn\bibnamedelima Kristinesønn}{R\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Oslo}%
+      }
+      \list{location}{1}{%
+        {Oslo, Norway}%
+      }
+      \strng{namehash}{e88b8e53f7412d1fdf7ed65e1f07615c}
+      \strng{fullhash}{e88b8e53f7412d1fdf7ed65e1f07615c}
+      \field{labelalpha}{Ste15}
+      \field{sortinit}{S}
+      \field{labeltitle}{{A study of Linux Containers and their ability to quickly offer scalability for web services}}
+      \field{title}{{A study of Linux Containers and their ability to quickly offer scalability for web services}}
+      \field{type}{mathesis}
+      \field{year}{2015}
+    \endentry
+    \entry{flannel}{online}{}
+      \name{labelname}{2}{}{%
+        {{hash=05b736c3a87bda308e5ecd543615f682}{Szumski}{S\bibinitperiod}{Rob}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=084d37b2e3a046f5256d0626502de43a}{Yakubovich}{Y\bibinitperiod}{Eugene}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=05b736c3a87bda308e5ecd543615f682}{Szumski}{S\bibinitperiod}{Rob}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=084d37b2e3a046f5256d0626502de43a}{Yakubovich}{Y\bibinitperiod}{Eugene}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{75c0456e518b5aed0b65cbfc0241f466}
+      \strng{fullhash}{75c0456e518b5aed0b65cbfc0241f466}
+      \field{labelalpha}{SY14}
+      \field{sortinit}{S}
+      \field{labeltitle}{flannel/packet-01.png}
+      \field{month}{9}
+      \field{note}{Commit: 82195b1cc4118528934904fa40fb0268f771bd42}
+      \field{title}{flannel/packet-01.png}
+      \field{urlday}{29}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://github.com/coreos/flannel/blob/master/packet-01.png
+      \endverb
+    \endentry
+    \entry{nodejs}{inbook}{}
+      \name{labelname}{1}{}{%
+        {{hash=306b7ad33b3843bd3402fa4e37fcbe5f}{Syed}{S\bibinitperiod}{Basarat\bibnamedelima Ali}{B\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=306b7ad33b3843bd3402fa4e37fcbe5f}{Syed}{S\bibinitperiod}{Basarat\bibnamedelima Ali}{B\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{306b7ad33b3843bd3402fa4e37fcbe5f}
+      \strng{fullhash}{306b7ad33b3843bd3402fa4e37fcbe5f}
+      \field{labelalpha}{Sye14}
+      \field{sortinit}{S}
+      \field{labeltitle}{Beginning Node.js}
+      \field{chapter}{2}
+      \field{isbn}{978-1-4842-0188-6}
+      \field{title}{Beginning Node.js}
+      \field{year}{2014}
+      \field{pages}{25	}
+    \endentry
+    \entry{hftguy}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=be38d52ba1ad69e6f657f8761fb39f21}{THEHFTGUY}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=be38d52ba1ad69e6f657f8761fb39f21}{THEHFTGUY}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{be38d52ba1ad69e6f657f8761fb39f21}
+      \strng{fullhash}{be38d52ba1ad69e6f657f8761fb39f21}
+      \field{labelalpha}{THE16}
+      \field{sortinit}{T}
+      \field{labeltitle}{Docker in Production: A History of Failure}
+      \field{day}{1}
+      \field{month}{11}
+      \field{title}{Docker in Production: A History of Failure}
+      \field{urlday}{12}
+      \field{urlmonth}{01}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://thehftguy.com/2016/11/01/docker-in-production-an-history-of-failure/comment-page-1/
+      \endverb
+    \endentry
+    \entry{trends}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d213852cc46c30c40c40d19f6b5313b4}{Trends}{T\bibinitperiod}{Google}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d213852cc46c30c40c40d19f6b5313b4}{Trends}{T\bibinitperiod}{Google}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d213852cc46c30c40c40d19f6b5313b4}
+      \strng{fullhash}{d213852cc46c30c40c40d19f6b5313b4}
+      \field{labelalpha}{Tre17}
+      \field{sortinit}{T}
+      \field{labeltitle}{kubernetes, apache mesos, docker swarm - Explore - Google Trends}
+      \field{day}{13}
+      \field{month}{2}
+      \field{title}{kubernetes, apache mesos, docker swarm - Explore - Google Trends}
+      \field{urlday}{13}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.google.com/trends/explore?q=kubernetes,apache%20mesos,docker%20swarm
+      \endverb
+    \endentry
+    \entry{vase2015advantages}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=b7d6271ba3a0f576447c9fcadfce981d}{Vase}{V\bibinitperiod}{Tuomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b7d6271ba3a0f576447c9fcadfce981d}{Vase}{V\bibinitperiod}{Tuomas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b7d6271ba3a0f576447c9fcadfce981d}
+      \strng{fullhash}{b7d6271ba3a0f576447c9fcadfce981d}
+      \field{labelalpha}{Vas15}
+      \field{sortinit}{V}
+      \field{labeltitle}{Advantages of Docker}
+      \field{howpublished}{\url{http://urn.fi/URN:NBN:fi:jyu-201512093942}}
+      \field{title}{Advantages of Docker}
+      \field{year}{2015}
+    \endentry
+    \entry{Vohra}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=8ac3410971ca9d60e89889d46dad2a75}{Vohra}{V\bibinitperiod}{Deepak}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8ac3410971ca9d60e89889d46dad2a75}{Vohra}{V\bibinitperiod}{Deepak}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{8ac3410971ca9d60e89889d46dad2a75}
+      \strng{fullhash}{8ac3410971ca9d60e89889d46dad2a75}
+      \field{labelalpha}{Voh16}
+      \field{sortinit}{V}
+      \field{labeltitle}{Kubernetes Microservices with Docker}
+      \field{isbn}{9781484219065}
+      \field{title}{Kubernetes Microservices with Docker}
+      \field{year}{2016}
+    \endentry
+    \entry{pricingcompare}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=9b1d9a585487aa8dbe66c4f60fb3e1ec}{Weins}{W\bibinitperiod}{Kim}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9b1d9a585487aa8dbe66c4f60fb3e1ec}{Weins}{W\bibinitperiod}{Kim}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9b1d9a585487aa8dbe66c4f60fb3e1ec}
+      \strng{fullhash}{9b1d9a585487aa8dbe66c4f60fb3e1ec}
+      \field{labelalpha}{Wei16}
+      \field{sortinit}{W}
+      \field{labeltitle}{AWS vs Azure vs Google Cloud Pricing: Compute Instances}
+      \field{day}{28}
+      \field{month}{11}
+      \field{title}{AWS vs Azure vs Google Cloud Pricing: Compute Instances}
+      \field{urlday}{13}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.rightscale.com/blog/cloud-cost-analysis/aws-vs-azure-vs-google-cloud-pricing-compute-instances
+      \endverb
+    \endentry
+    \entry{12factor}{online}{}
+      \true{morelabelname}
+      \name{labelname}{1}{}{%
+        {{hash=78c94d63299ff16130ed37a90dc97dcd}{Wiggins}{W\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{1}{}{%
+        {{hash=78c94d63299ff16130ed37a90dc97dcd}{Wiggins}{W\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{457b7c2f63e4e629cdd03c5681e6466e}
+      \strng{fullhash}{457b7c2f63e4e629cdd03c5681e6466e}
+      \field{labelalpha}{Wig+17}
+      \field{sortinit}{W}
+      \field{labeltitle}{The Twelve-Factor App}
+      \field{day}{13}
+      \field{month}{2}
+      \field{note}{Commit: 7fe88559504812f043601774757a01156d62f3d7}
+      \field{title}{The Twelve-Factor App}
+      \field{urlday}{14}
+      \field{urlmonth}{02}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/heroku/12factor
+      \endverb
+    \endentry
+    \entry{continte}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=42b48b91ec04dc8b258db592d08ee9e9}{Wolff}{W\bibinitperiod}{Eberhard}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=42b48b91ec04dc8b258db592d08ee9e9}{Wolff}{W\bibinitperiod}{Eberhard}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt.verlag}%
+      }
+      \strng{namehash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \strng{fullhash}{42b48b91ec04dc8b258db592d08ee9e9}
+      \field{labelalpha}{Wol14}
+      \field{sortinit}{W}
+      \field{labeltitle}{Continuous Delivery: Der pragmatische Einstieg}
+      \field{day}{30}
+      \field{isbn}{3864902088}
+      \field{month}{10}
+      \field{title}{Continuous Delivery: Der pragmatische Einstieg}
+      \field{year}{2014}
+    \endentry
+    \entry{wood2010disaster}{article}{}
+      \name{labelname}{6}{}{%
+        {{hash=fe58199494efc3af732943d49570e292}{Wood}{W\bibinitperiod}{Timothy}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a3fd411a024ce251e95f5f845d3be0a4}{Cecchet}{C\bibinitperiod}{Emmanuel}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=4d31e357cdd88ab38004416262e6dc67}{Ramakrishnan}{R\bibinitperiod}{Kadangode\bibnamedelima K}{K\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=9e62a4ed6ab6167ac3bf8e9f55ac785e}{Shenoy}{S\bibinitperiod}{Prashant\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=97b106f23ee973a8db80fc21e6dd6f52}{Merwe}{M\bibinitperiod}{Jacobus\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+        {{hash=ada17150a2a3e0d00c9993b0b5f99ba2}{Venkataramani}{V\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=fe58199494efc3af732943d49570e292}{Wood}{W\bibinitperiod}{Timothy}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=a3fd411a024ce251e95f5f845d3be0a4}{Cecchet}{C\bibinitperiod}{Emmanuel}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=4d31e357cdd88ab38004416262e6dc67}{Ramakrishnan}{R\bibinitperiod}{Kadangode\bibnamedelima K}{K\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=9e62a4ed6ab6167ac3bf8e9f55ac785e}{Shenoy}{S\bibinitperiod}{Prashant\bibnamedelima J}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=97b106f23ee973a8db80fc21e6dd6f52}{Merwe}{M\bibinitperiod}{Jacobus\bibnamedelima E}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{van\bibnamedelima der}{v\bibinitperiod\bibinitdelim d\bibinitperiod}{}{}}%
+        {{hash=ada17150a2a3e0d00c9993b0b5f99ba2}{Venkataramani}{V\bibinitperiod}{Arun}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3e00cb663031f4aa96f08c8d553e6e3c}
+      \strng{fullhash}{1125f5e7c81e1f10a7ab491d462a3a24}
+      \field{labelalpha}{Woo+10}
+      \field{sortinit}{W}
+      \field{labeltitle}{Disaster Recovery as a Cloud Service: Economic Benefits \& Deployment Challenges.}
+      \field{journaltitle}{HotCloud}
+      \field{title}{Disaster Recovery as a Cloud Service: Economic Benefits \& Deployment Challenges.}
+      \field{volume}{10}
+      \field{year}{2010}
+      \field{pages}{8\bibrangedash 15}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,34 @@
+\chapter{Abstract}
+
+Das Bereithalten von Applikationen in der Cloud
+ist mit einer Reihe von komplexen Zusammenh\"angen und Abl\"aufen
+verbunden. Mit Tools wie Ansible, Puppet oder Chef ist die Administration
+oft sehr kleinteilig, statisch und oft nicht deklarativ genug.
+
+Das Container Orchestration Tool \quotes{Kubernetes} bietet eine Abstraktion
+der Host-Systeme an. Es fasst mehrere Server in einem Cluster
+zusammen und bietet \textbf{eine} Schnittstelle f\"ur das Management
+\textbf{aller} Server an.
+
+Mit der Abstraktion des Host-Systems und der Abstraktion der
+Applikations-Umgebung durch Docker- oder rkt-Container, ergibt sich ein
+neues Paradigma f\"ur den Betrieb eines Clusters in der Cloud.
+
+Kubernetes vereint L\"osungen zur Verf\"ugung f\"ur Standardvorg\"ange,
+wie Deployments oder Skalierung. Durch zus\"atzliche
+Module kann der Funktionsumfang weiter ausgebaut werden.
+
+Die Installation von Kubernetes ist aber aufgrund der großen Zahl an
+unterschiedlichen Herangehensweisen mit einigen Schwierigkeiten verbunden.
+Speziell die Kombination aus Terraform in Verbindung mit CoreOS auf
+Amazon Web Services Infrastruktur ist dabei zwar eine naheliegende Kombination,
+jedoch aktuell nicht ausreichend erprobt und dokumentiert.
+
+Diese Arbeit nimmt sich dieser Herangehensweise an und er\"ortert, wie
+eine Installation dieses Clusters, sowie der weiteren n\"otigen Komponenten
+umgesetzt werden kann. Um einen besseren Einblick in den Einsatz des Clusters
+unter realen Bedingungen zu gewinnen, wird ein existierendes
+Backend auf dieses Cluster migriert.
+
+Auf Grundlage von bestimmten Anforderungen wird ausgewertet, inwiefern
+das implementierte System diesen Anforderungen gerecht wird.

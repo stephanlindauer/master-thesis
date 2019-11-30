@@ -1,0 +1,28 @@
+core@ip-10-0-1-222 ~ $ sudo journalctl -u etcd2.service
+-- Logs begin at Fri 2016-12-02 15:48:31 UTC, end at Fri 2016-12-02 15:51:45 UTC. --
+Dec 02 15:48:46 ip-10-0-1-222.eu-central-1.compute.internal systemd[1]: Starting etcd2...
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: recognized and used environment variable ETCD_DATA_DIR=/var/lib/etcd2
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: recognized and used environment variable ETCD_DISCOVERY=https://discovery.etcd.io/71c832e3eb573969341dcfbba4510262
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: recognized and used environment variable ETCD_ELECTION_TIMEOUT=1200
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: recognized and used environment variable ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379,http://0.0.0.0:4001
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: recognized and used environment variable ETCD_NAME=b1021ab3c58f47dcb43d15ae4b12f269
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: etcd Version: 2.3.7
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: Git SHA: fd17c91
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: Go Version: go1.7.1
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: Go OS/Arch: linux/amd64
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: setting maximum number of CPUs to 1, total number of available CPUs is 1
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: listening for peers on http://localhost:2380
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: listening for peers on http://localhost:7001
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: listening for client requests on http://0.0.0.0:2379
+Dec 02 15:48:47 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: listening for client requests on http://0.0.0.0:4001
+Dec 02 15:48:48 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: stopping listening for client requests on http://0.0.0.0:4001
+Dec 02 15:48:48 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: stopping listening for client requests on http://0.0.0.0:2379
+Dec 02 15:48:48 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: stopping listening for peers on http://localhost:7001
+Dec 02 15:48:48 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: stopping listening for peers on http://localhost:2380
+Dec 02 15:48:48 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: discovery cluster full, falling back to proxy
+Dec 02 15:48:49 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: proxy: using peer urls [http://10.0.1.213:2380 http://10.0.1.251:2380 http://10.0.1.56:2380] 
+Dec 02 15:48:49 ip-10-0-1-222.eu-central-1.compute.internal systemd[1]: Started etcd2.
+Dec 02 15:48:49 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: endpoints found ["http://10.0.1.56:2379" "http://10.0.1.213:2379" "http://10.0.1.56:4001" "http://10.0.1.213:4001" "http://10.0.1.2
+Dec 02 15:48:49 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: proxy: listening for client requests on http://0.0.0.0:2379
+Dec 02 15:48:49 ip-10-0-1-222.eu-central-1.compute.internal etcd2[1008]: proxy: listening for client requests on http://0.0.0.0:4001
+

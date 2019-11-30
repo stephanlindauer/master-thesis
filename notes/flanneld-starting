@@ -1,0 +1,26 @@
+core@ip-10-0-1-89 ~ $ journalctl -u flanneld.service
+-- Logs begin at Fri 2016-12-02 16:45:37 UTC, end at Fri 2016-12-02 16:59:59 UTC. --
+Dec 02 16:45:52 ip-10-0-1-89.eu-central-1.compute.internal systemd[1]: Starting Network fabric for containers...
+Dec 02 16:45:53 ip-10-0-1-89.eu-central-1.compute.internal etcdctl[928]: {                                  "Network": "10.1.0.0/16",        "Backend": {                       "Type": "vxlan"             
+Dec 02 16:45:53 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: image: using image from file /usr/lib/rkt/stage1-images/stage1-fly.aci
+Dec 02 16:45:54 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: image: searching for app image quay.io/coreos/flannel
+Dec 02 16:45:55 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: image: remote fetching from URL "https://quay.io/c1/aci/quay.io/coreos/flannel/v0.6.2-amd64/aci/linux/amd64/"
+Dec 02 16:45:57 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: Downloading ACI:  0 B/8.58 MB
+Dec 02 16:45:57 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: Downloading ACI:  16.4 KB/8.58 MB
+Dec 02 16:45:58 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: Downloading ACI:  4.17 MB/8.58 MB
+Dec 02 16:45:58 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: Downloading ACI:  8.58 MB/8.58 MB
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.777376 00943 main.go:126] Installing signal handlers
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.778891 00943 manager.go:163] Using 10.0.1.89 as external interface
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.779121 00943 manager.go:164] Using 10.0.1.89 as external endpoint
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.833079 00943 local_manager.go:179] Picking subnet in range 10.1.1.0 ... 10.1.255.0
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.882341 00943 ipmasq.go:47] Adding iptables rule: -s 10.1.0.0/16 -d 10.1.0.0/16 -j RETURN
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.970210 00943 ipmasq.go:47] Adding iptables rule: -s 10.1.0.0/16 ! -d 224.0.0.0/4 -j MASQUERADE
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.990877 00943 ipmasq.go:47] Adding iptables rule: ! -s 10.1.0.0/16 -d 10.1.0.0/16 -j MASQUERADE
+Dec 02 16:46:01 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:01.993077 00943 manager.go:246] Lease acquired: 10.1.80.0/24
+Dec 02 16:46:02 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:02.006842 00943 network.go:58] Watching for L3 misses
+Dec 02 16:46:02 ip-10-0-1-89.eu-central-1.compute.internal rkt[943]: I1202 16:46:02.007121 00943 network.go:66] Watching for new subnet leases
+Dec 02 16:46:02 ip-10-0-1-89.eu-central-1.compute.internal rkt[1029]: image: using image from file /usr/lib/rkt/stage1-images/stage1-fly.aci
+Dec 02 16:46:02 ip-10-0-1-89.eu-central-1.compute.internal rkt[1029]: image: using image from local store for image name quay.io/coreos/flannel:v0.6.2-amd64
+Dec 02 16:46:02 ip-10-0-1-89.eu-central-1.compute.internal systemd[1]: Started Network fabric for containers.
+lines 1-23/23 (END)
+

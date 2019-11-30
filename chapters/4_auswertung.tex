@@ -1,0 +1,379 @@
+\chapter{Auswertung}
+\label{cha:Auswertung}
+
+
+\section{Kosten}
+
+Der Vergleich der Kosten stellt sich als relativ komplex dar.
+Das Cluster bringt eine Reihe von
+Vorteilen mit sich, die monetär nicht zu beziffern sind.
+Was sich auch durch die Migration grundlegend verändert hat, ist die Struktur der
+Kosten.
+Durch die automatische
+Skalierung konnten einige der fixen Kosten in variable
+Kosten umgewandelt werden.
+Diese fallen nur dann an, wenn auch wirklich die entsprechende
+Nachfrage besteht.
+
+Im Vergleich der Kosten geht es also im Wesentlichen darum, den alten Ansatz mit
+größtenteils fixen Kosten mit dem neuen Ansatz mit fixen \textbf{und} variablen Kosten
+zu vergleichen.
+
+Der alte Ansatz hat Kosten von \$ 80.- im Monat verursacht, die nur knapp noch die
+anfallende Last verarbeiten konnten. Wäre hier die Last auch nur geringfügig
+gestiegen, wäre eine leistungsfähigere Instanz nötig geworden,
+welche bei Digital Ocean dann doppelt so viel Leistung bringt,
+aber auch doppelt so viel, also \$ 160.-, kostet.
+Hieran ist auch zu erkennen, dass eines der Hauptvorteile des neuen Systems ist, dass
+es fast stufenlos skalieren kann, während bei der alten Herangehensweise
+manuelle und relativ
+große Leistungs- und Kostensprünge gemacht werden müssen, um weiterhin
+die monatlichen Lastobergrenzen abdecken zu können.
+
+In folgender Tabelle werden die Kosten für das Cluster, so wie es im
+Rahmen dieser Arbeit umgesetzt wurde, berechnet.
+
+\begin{flushleft}
+\centering
+\begin{tabular}{ | l | l | l | l | }
+  \hline
+  Zweck          & Produkt & Anzahl & Monatliche Kosten \\ \hline \hline
+  Master         & EC2 t2.medium  & 1 & \$ 39.53 \\ \hline
+  Worker         & EC2 t2.small   & 2 (Minimum) & \$ 39.54 \\ \hline
+  Ingress Worker & EC2 t2.medium  & 1 & \$ 39.53 \\ \hline
+  Admin Worker   & EC2 t2.medium  & 1 & \$ 39.53 \\ \hline
+  Testing Worker & EC2 t2.small   & 1 & \$ 19.77 \\ \hline
+  etcd           & EC2 t2.nano    & 3 & \$ 14.94 \\ \hline
+  EBS Registry   & EBS HDD 500 GB & 1 & \$ 15.00 \\ \hline
+  EBS PostgreSQL & EBS SSD 10 GB  & 1 & \$ 1.19 \\ \hline \hline
+  \multicolumn{3}{|l|}{Monatliche Gesamtkosten} & \$ 207.84 \\ \hline
+\end{tabular}
+\captionof{table}
+    [Berechnung der monatlichen Gesamtkosten des Clusters]
+    {Berechnung der monatlichen Gesamtkosten des Clusters}
+\end{flushleft}
+
+Lässt man nun in dieser Berechnung die Faktoren weg,
+die \emph{Nice-to-Have}-Features bereitstellen,
+die ja in der Ausgangssituation auch nicht vorhanden waren
+und wählt andere Elemente sparsam aus,
+könnte diese Rechnung auch folgendermaßen aussehen:
+
+\begin{flushleft}
+\centering
+\begin{tabular}{ | l | l | l | l | }
+  \hline
+  Zweck          & Produkt & Anzahl & Monatliche Kosten \\ \hline \hline
+  Master         & EC2 t2.medium  & 1 & \$ 39.53 \\ \hline
+  Worker         & EC2 t2.small   & 1 & \$ 19.77 \\ \hline
+  etcd           & EC2 t2.nano    & 3 & \$ 14.94 \\ \hline
+  \multicolumn{3}{|l|}{Monatliche Gesamtkosten} & \$ 74.24 \\ \hline
+\end{tabular}
+\captionof{table}
+    [Berechnung der monatlichen Gesamtkosten des Clusters ohne Nice-to-Have-Features]
+    {Berechnung der monatlichen Gesamtkosten des Clusters ohne Nice-to-Have-Features}
+\end{flushleft}
+
+Mit dem, in dieser Arbeit implementierten, Cluster fallen also rund
+\$ 133.60 von \$ 207.84 an, weil \emph{Nice-to-Have}-Features umgesetzt wurden.
+
+Um die Vergleichbarkeit zu wahren, soll also an dieser Stelle mit diesem
+geringeren Betrag von \$ 74.24 weiter gerechnet werden.
+Dieser Betrag steht für die fixen Kosten des Kubernetes-Clusters, wobei
+die variablen monatlichen Kosten sich in etwa folgermaßen berechnen werden:
+
+F\"ur circa 12 Stunden pro Monat mit erhöhtem Traffic,
+werden circa 4 weitere Worker Instanzen benötigt werden, was Kosten
+in Höhe von nur \$ 1.32 verursacht.
+
+Um also einmal pro Monat 16.500 RPM über eine Zeitspanne von 12 Stunden
+abdecken zu können und sonst mit geringer Last erreichbar zu bleiben, fallen
+mit dem alten Ansatz \$ 80.- pro Monat an.
+Mit dem Kubernetes Cluster sind das \$ 75.56 mit sparsamster Konfiguration.
+Der Kubernetes Ansatz hat hier also \$ 4.44 weniger Kosten verursacht.
+
+Die wahre Stärke liegt aber in der automatischen Skalierung, die, grob
+geschätzt, auf 3300 RPM nur einer weitere t2.small Instanz zusätzlich
+benötigt, welche stundenweise abgerechnet wird und
+terminiert, sobald sie nicht
+mehr benötigt wird. Deshalb wird das Kubernetes Cluster mit steigendem und
+fluktuierendem Traffic auch immer effizienter und kostengünstiger als seine
+Alternative.
+
+Um zu berechnen, ab wann nun auch die Kosten der \emph{Nice-to-Have}-Features
+den \emph{Break-even Point} erreichen, müsste bekannt sein, für
+wie viele RPM nun welcher Server im alten Ansatz nötig wäre.
+Im Rahmen dieser
+Arbeit konnte dies jedoch nicht festgestellt
+werden und Schätzungen diesbezüglich wären zu
+ungenau. Fest steht aber, dass dieser \emph{Break-even Point} auch hier
+irgendwann erreicht wäre.
+
+Die hier beschriebenen Berechnungen sind relativ grob, was sich durch
+die fehlende Erfahrung im Live-Betrieb dieses Cluster und die viele
+Einflussfaktoren begr\"undet.
+Deshalb soll an dieser Stelle nur
+gesagt sein, dass dieses Projekt bei sparsamen Setup relativ nah und
+wahrscheinlich über dem \emph{Break-even Point} liegt.
+In einem Szenario, in dem mehr Traffic anfällt, hätte dieser Punkt deutlich
+klarer für die finanziellen Vorteile dieses Clusters gesprochen.
+
+\section{Sicherheit}
+
+\subsection{TCP/IP}
+
+Die nach außen hin verfügbaren Schnittstellen konnten alle mit TLS
+und gegebenenfalls Basic-Auth abgesichert werden.
+Alle weiteren Ports konnten für Firewall-Regeln, sowohl für das Internet,
+als auch für das private Subnetz abgesichert werden.
+
+Durch die Wahl einer weiteren Top-Level Domain l\"asst sich zudem
+verschleiern,
+unter welchen IP-Adressen sich die Instanzen befinden,
+die für den User nicht
+relevant sind (in diesem Fall: Admin, Master und Worker Nodes).
+Dies ist jedoch hier aus Kostengründen nicht
+umgesetzt worden.
+
+Auch die SSH Daemons auf den CoreOS Instanzen und die
+Kubernetes API sind mit Public-Key
+Verschlüsselung ausreichend abgesichert.
+Sollte es sich in der Zukunft herausstellen, dass auf
+diesen Endpoints tatsächlich öfter unbefugte Anfragen eingehen,
+könnten IP-Table Regeln hinzugefügt werden, welche diese dann blocken.
+Im Rahmen dieser Arbeit hat sich dies jedoch nicht als nötig erwiesen.
+
+\subsection{Pods}
+
+Für die Ingress-Controller kann Rate-Limiting per Nginx aktiviert
+werden, was die Gefahr von DDoS-Attacken verringert.
+
+Sollte ein Angreifer einen laufenden Pod übernommen haben,
+verhindern die
+Docker Security Features, dass ein Ausbrechen aus diesem Pod
+möglich ist \cite{dockersec}.
+
+\subsection{Betriebssystem}
+
+Durch die automatischen Updates von CoreOS werden Sicherheitslücken des
+Betriebssystems zeitnah automatisch geschlossen.
+
+\subsection{Kubernetes Keys und Zertifikate}
+
+Um mit dem Kubernetes Master interagieren zu können, sind auf allen Nodes
+Key- und Zertifikat-Dateien abgelegt. Sollten
+diese durch einen Angriff offen gelegt
+werden, hat der Angreifer volle Kontrolle über das Cluster.
+Hierfür sollte bei einer Weiterentwicklung des Clusters das
+\emph{Authorization Plugin} und \emph{Service Accounts} verwendet werden, sodass
+dann nur ein Subset der Zugriffsrechte offen liegt.
+
+\section{Automatische Skalierung}
+
+Das Testen der Skalierung der Pods innerhalb des Clusters und der Nodes,
+auf denen diese Pods laufen, hat sich als schwieriges Unterfangen herausgestellt.
+
+Die Last muss für diese Tests schrittweise angehoben werden
+(\quotes{Lasttest - up} \cite{cloudtest}),
+damit sich das Cluster anpassen kann.
+
+In den folgenden Punkten werden die verwendeten Tests und deren Ergebnisse
+erörtert.
+
+\subsection{Cluster-interner Test}
+
+Die Last kann innerhalb des Clusters nachgestellt werden, indem ein oder mehrere
+Pods deployed werden, die diese Last direkt auf den Kubernetes Service schicken.
+Der Ingress-Controller wird hierbei umgangen.
+Dies ist in diesem Fall mit einem Image passiert, welches über NodeJS
+asynchrone Requests startet. Das Cluster hat sich gemäß der Vorgabe verhalten
+und konnte die Test-Requests alle beantworten.
+
+\subsection{Externes Load-Testing}
+
+Externes Load-Testing ist ein komplexes Unterfangen, da für einen
+reellen Test auch reelle Bedingungen geschaffen werden müssen.
+So müsste simuliert werden, dass in manchen Fällen der TLS-Handshake
+abgearbeitet werden muss in anderen ist dies bereits geschehen und
+Client und
+Server können bereits über schnellere synchrone
+Verschlüsselung Daten austauschen.
+In anderen Fällen sind Requests unterschiedlich
+komplex, sodass
+eine höhere Last im Webserver oder in der Datenbank entsteht.
+
+Im Rahmen dieser Arbeit sind nur einfache immer gleiche Requests, welche
+API-Anfragen, mit Datenbank-Lesezugriff anstoßen, getestet worden.
+
+Zudem ist das Erzeugen der Last selbst ein Problem, denn sollte diese Last
+zum Beispiel vom Entwickler-Rechner generiert werden, ist die maximale Last
+von Faktoren abhängig, wie die technischen Spezifikationen
+dieses Rechners, der Performance des verwendeten Tools oder
+der Bandbreite der Internetverbindung.
+
+In den Tests wurde wieder der bereits erwähnte NodeJS-Anwendung benutzt,
+sowie \emph{Apache Benchmark}. Die Last-Spitzen von 16.500 RPM haben in beiden
+Fällen zu
+Response-Times von durchschnittlich 7,23 Sekunden geführt.
+Diese sind jedoch zum größten Teil durch die Internetleitung und die
+Ausstattung des verwendeten Laptops entstanden und taugen nicht für ein
+abschließendes Fazit. Was man aber erkennen kann an diesem Resultat, ist,
+dass
+alle gestarteten Requests auch beantwortet werden konnten und die
+Last an diesem
+Punkt nicht dazu geführt hat, dass Requests verworfen werden mussten.
+
+\subsection{Load-Testing im Live Betrieb}
+
+Um ein abschließendes Bild der Performance des Clusters zu bekommen,
+wurde dieses mit dem Legacy-System ausgetauscht und hat während der
+Lastspitzen die eingehenden Requests von echten Usern verarbeitet.
+Da an diesem Tag maximal nur circa 11.000 RPM angefallen sind, ist die
+durchschnittliche Lastspitze der Anforderung nicht erreicht gewesen.
+
+Folgende Beobachtung konnten trotzdem gemacht werden:
+Die Skalierung der API-Pods und der darunter liegenden Nodes funktioniert
+genau so, wie es im Vorfeld geplant war und hat keine schweren
+Performance-Probleme offenbart.
+Trotzdem war die insgesamte Performance eingeschränkt
+durch folgende Flaschenhälse:
+\begin{description}
+  \item[Datenbank-Pod:] Dieser ist in diesem Szenario nur ein einzelner Pod,
+  der sich bei hoher Last nicht weiter horizontal skalieren kann.
+  Zur Abhilfe sollte auch dieser in Zukunft in einem
+  High-Availability-Modus mit Replicas und gegebenenfalls Shards betrieben
+  werden \cite{Vohra}. Auch wäre denkbar die Queries, die die API Pods absetzen, weiter
+  zu optimieren.
+  \item[Ingress-Controller:]
+  Vor allem durch die TLS-Termination entstehen hier hohe CPU-Lasten.
+  Eine weiteres Nadelöhr könnte hier im Laufe der Zeit auch die
+  Netzwerk-Performance werden.
+  Mögliche Lösungen wären:
+  \begin{itemize}
+    \item Vertikale Skalierung der Hardware der Ingress-Instanz
+    \item Eine weitere
+    Ingress Instanz, welche über DNS-Loadbalancing Last annimmt
+  \end{itemize}
+\end{description}
+
+\section{Vendor Lock-in}
+
+Um einschätzen zu können, wie portabel das Cluster tatsächlich ist, soll
+darauf eingegangen werden, welche Komponenten bei einem Umzug auf einen
+anderen Iaas-Anbieter verändert werden müssten. Als Beispiel soll ein Umzug
+in die Google Cloud dienen.
+
+\subsection{Terraform Konfiguration}
+
+Die vorhandenen
+Terraform AWS Ressourcen müssen mit den äquivalenten Google Cloud Ressourcen
+ausgetauscht werden.
+Funktional bietet die Google Cloud alle Features, die für dieses Cluster
+benötigt werden,
+sodass hier keine Workarounds notwendig sind.
+Was aber als zusätzlicher Arbeitsaufwand zu Buche schlägt, ist die
+Änderung der neuen Konfigurationselemente zu denen der Google Cloud.
+Diese haben andere Namen und andere Felder über die die jeweiligen Werte
+definiert werden.
+
+\subsection{Cloud-Config}
+Die Cloud-Config Dateien können 1 zu 1 übernommen werden. Da CoreOS bei beiden
+Anbietern in gleicher Weise arbeitet, ist davon auszugehen, dass diese
+unabhängig vom IaaS-Anbieter immer gleich funktioniert.
+
+\subsection{Kubernetes Manifeste}
+Auch Kubernetes kann auf beiden Plattformen in derselben Version und mit
+denselben Features deployed werden. Einzig die EBS Volumes und
+die Verknüpfung vom \emph{Cluster Autoscaler Pod} zur \emph{Auto Scaling Group} müssen
+gemäß dem Google Cloud \"Aquivalent abgeändert werden.
+
+\section{Ausfallsicherheit}
+
+Das Cluster, wie es in dieser Arbeit implementiert wurde, stellt eine Ausfallsicherheit
+bereit für folgende Fälle:
+\begin{description}
+  \item[Pod fällt aus:] Wird erneut gestartet
+  \item[Worker Node fällt aus:] Die Pods auf diesem werden auf einer
+  anderen Node gestartet
+  über die \emph{Auto Scaling Group} wird eine neue Worker Node gestartet.
+\end{description}
+
+Die automatische Wiederherstellung wurde getestet, indem diese Instanzen
+oder Pods terminiert wurden.
+\hfill
+\\
+Fälle, die mit dieser Implementation nicht ausfallsicher sind:
+
+\begin{description}
+  \item[Availability Zone:]
+  Sollte bei AWS die Availability Zone ausfallen, auf dem das Cluster liegt,
+  ist damit das komplette Cluster nicht mehr zu erreichen. Eine Lösung, welche
+  aber eben auch die Kosten in die Höhe treibt, ist, das Cluster über zwei
+  Availability Zones auszubreiten. So kann die übrig bleibende Availability Zone
+  die Aufgaben der ausgefallenen Availability Zone übernehmen.
+  \item[Master, Ingress und Testing Node:]
+  Hier wurde aus Kostengründen keine Redundanz geschaffen.
+  Als Lösung könnten hier jeweils Redundanzen, am besten in
+  einer weiteren Availability Zone, geschaffen werden.
+\end{description}
+\hfill
+\\
+Das Cluster ist also nur in einem gewissen Rahmen ausfallsicher. Mit
+größerem Budget könnte der Grad der Ausfallsicherheit jedoch erhöht werden.
+
+\section{Disaster Recovery}
+
+Da im Vorfeld nicht bekannt ist, um welchen Ausfall es sich genau handelt,
+lässt sich hier nur folgende generelle Aussage treffen:
+
+Dadurch, dass die Infrastruktur in Terraform definiert wurde, kann diese
+auch mit Terraform ganz oder teilweise
+wiederhergestellt werden.
+
+Das \emph{Recovery Time Objective} (RTO) \cite{wood2010disaster} ist also
+im schlechtesten Fall
+die Zeit, die Terraform benötigt um alle Infrastruktur-Elemente
+mit \code{terraform destroy} oder \code{terraform taint} zu löschen
+und mit \code{terraform apply} wieder aufzusetzen.
+Mit der finalen Komplexit\"at dieses Clusters, liegt diese Zeitspanne bei
+rund 21 Minuten.
+
+Das \emph{Recovery Point Objective} (RPO) \cite{wood2010disaster} hängt allein von der Häufigkeit der
+Backups ab und kann je nach Bedarf individuell bestimmt werden. In dieser Arbeit
+ist dieser Wert nur für die PostgreSQL-Datenbank relevant.
+Das ausgelagerte EBS Volume stellt eine RPO von 0 Sekunden sicher. Sollte jedoch
+auch das EBS ausfallen, ist die RPO abhängig von der Häufigkeit, mit der
+Backups außerhalb des Cluster gemacht werden, was aber im Rahmen
+dieser Arbeit nicht implementiert wurde.
+
+\section{Deployment Pipeline}
+
+Durch die Schnittstellen der Deployment Komponente
+und den Aufbau des Clusters war es möglich, mittels
+eines Skriptes automatische Deployments umzusetzen.
+Die Zeit zwischen Commit und dem Release in der jeweiligen Umgebung ist
+damit besonders kurz und Images mit Domain-Logik müssen nicht außerhalb
+des Clusters existieren, was die Sicherheit dieser Daten verbessert.
+
+\section{Open Source statt proprietärer Software}
+Ausnahmslos alle Komponenten, die in dieser Arbeit umgesetzt wurden, sind
+Open Source Software.
+
+\section{Self Hosted statt externe Provider}
+Alle Komponenten dieses Clusters können im Cluster selbst gehostet werden.
+Einzige Ausnahme ist hier das Docker Image, welches das Bootstrapping und die
+Deployment-Pipeline abbildet. Da dies aber kostenfrei ist, kann diese
+Ausnahme hingenommen werden.
+
+\section{Logging, Monitoring und Alerting}
+
+Für alle diese Anforderugen konnten Komponenten
+in diesem Cluster umgesetzt werden. Die einzelnen
+Komponenten sollten jedoch zusätzlich noch weiter für diesen Use Case
+konfiguriert werden, um die zur Verfügung stehenden Features entsprechend
+nutzen zu können.
+
+\section{The 12-Factor App}
+
+Die Regeln aus dem \quotes{The 12-Factor App}-Manifest, lassen sich alle
+anwenden und werden teilweise auch von Kubernetes so erzwungen.

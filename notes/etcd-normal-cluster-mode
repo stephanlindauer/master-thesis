@@ -1,0 +1,52 @@
+-- Logs begin at Fri 2016-12-02 15:47:41 UTC, end at Fri 2016-12-02 16:09:51 UTC. --
+Dec 02 15:47:58 ip-10-0-1-251.eu-central-1.compute.internal systemd[1]: Starting etcd2...
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_ADVERTISE_CLIENT_URLS=http://10.0.1.251:2379,http://10.0.1.251:4001
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_DATA_DIR=/var/lib/etcd2
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_DISCOVERY=https://discovery.etcd.io/71c832e3eb573969341dcfbba4510262
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_ELECTION_TIMEOUT=1200
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_INITIAL_ADVERTISE_PEER_URLS=http://10.0.1.251:2380
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379,http://0.0.0.0:4001
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_LISTEN_PEER_URLS=http://10.0.1.251:2380,http://10.0.1.251:7001
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: recognized and used environment variable ETCD_NAME=b739f9a65e864e1ab0fb871e1f5852cc
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: etcd Version: 2.3.7
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: Git SHA: fd17c91
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: Go Version: go1.7.1
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: Go OS/Arch: linux/amd64
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: setting maximum number of CPUs to 1, total number of available CPUs is 1
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: listening for peers on http://10.0.1.251:2380
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: listening for peers on http://10.0.1.251:7001
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: listening for client requests on http://0.0.0.0:2379
+Dec 02 15:48:00 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: listening for client requests on http://0.0.0.0:4001
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: found peer 60e8d9ce10d42b13 in the cluster
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: found self abf8b595e39ba12b in the cluster
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: found peer 2f39af6ad8bd4be4 in the cluster
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: found 3 needed peer(s)
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: name = b739f9a65e864e1ab0fb871e1f5852cc
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: data dir = /var/lib/etcd2
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: member dir = /var/lib/etcd2/member
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: heartbeat = 100ms
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: election = 1200ms
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: snapshot count = 10000
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: discovery URL= https://discovery.etcd.io/71c832e3eb573969341dcfbba4510262
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: advertise client URLs = http://10.0.1.251:2379,http://10.0.1.251:4001
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: initial advertise peer URLs = http://10.0.1.251:2380
+Dec 02 15:48:01 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: initial cluster = b739f9a65e864e1ab0fb871e1f5852cc=http://10.0.1.251:2380
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: starting member abf8b595e39ba12b in cluster 905393683aa1cc43
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: abf8b595e39ba12b became follower at term 0
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: newRaft abf8b595e39ba12b [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: abf8b595e39ba12b became follower at term 1
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: starting server... [version: 2.3.7, cluster version: to_be_decided]
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal systemd[1]: Started etcd2.
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: the connection with 60e8d9ce10d42b13 became active
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: the connection with 2f39af6ad8bd4be4 became active
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: added member 2f39af6ad8bd4be4 [http://10.0.1.213:2380] to cluster 905393683aa1cc43
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: abf8b595e39ba12b [term: 1] received a MsgVote message with higher term from 60e8d9ce10d42b13 [term: 2]
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: abf8b595e39ba12b became follower at term 2
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: abf8b595e39ba12b [logterm: 1, index: 3, vote: 0] voted for 60e8d9ce10d42b13 [logterm: 1, index: 3] at term 2
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: added member 60e8d9ce10d42b13 [http://10.0.1.56:2380] to cluster 905393683aa1cc43
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: added local member abf8b595e39ba12b [http://10.0.1.251:2380] to cluster 905393683aa1cc43
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: raft.node: abf8b595e39ba12b elected leader 60e8d9ce10d42b13 at term 2
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: set the initial cluster version to 2.3
+Dec 02 15:48:02 ip-10-0-1-251.eu-central-1.compute.internal etcd2[944]: published {Name:b739f9a65e864e1ab0fb871e1f5852cc ClientURLs:[http://10.0.1.251:2379 http://10.0.1.251:4001]} to cluster 905393683aa1
+~
+

@@ -1,0 +1,201 @@
+\chapter{Zusammenfassung und Ausblick}
+\label{cha:Zusammenfassung und Ausblick}
+
+\section{Zusammenfassung}
+
+\subsection{Migrations-Prozess}
+Der Migrations-Prozess hat sich als schwerer und langwieriger herausgestellt,
+als das anfänglich geplant war.
+Die Hauptgründe dafür lagen vor allem
+in folgenden Punkten:
+
+\begin{description}
+  \item[Qualität der Dokumentation]
+  Die Dokumentation, speziell von CoreOS und Kubernetes, ist nicht besonders
+  gut.
+  Teilweise sind Sachverhalte oder
+  Beispiele falsch beschrieben
+  und führen den Leser in die Irre \cite{masteroslo}. Im Rahmen dieser Arbeit sind diverse
+  Pull Requests auf die Dokumentationen dieser Software auf Github entstanden, um einige
+  dieser Missstände zu beheben.
+  Die verantwortlichen Teams arbeiten in der Regel relativ
+  schnell, sodass ein Fix oft
+  innerhalb von 24 Stunden veröffentlicht wurde.
+  Größtes Problem in der Pflege der Dokumentationen ist sicher, dass sich
+  die jeweilige Software aktuell stätig verändert, aber auch, dass das die
+  Peripherie-Software tut. So fanden sich die größten Dokumentationsfehler
+  in der Beschreibung, wie mit den Schnittstellen zwischen den
+  Software-Komponenten
+  umzugehen ist.
+  \item[Feedback Loops]
+  In dem Technologie-Stack, der für diese Arbeit gewählt wurde, stellt
+  Terraform die Infrastruktur in der Cloud auf. Desto komplexer diese
+  Infrastruktur wird und desto länger Abhängigkeitsketten werden, desto
+  länger dauert die Initialisierung der Infrastruktur.
+  Anschließend m\"ussen sich dann die Komponenten, die auf Kubernetes laufen
+  sollen,
+  bauen oder herunterladen und danach gestartet werden.
+  Anfangs dauerte dieser Vorgang
+  noch rund 8 Minuten, während das finale Setup oft über 20 Minuten
+  benötigt, um
+  betriebsbereit zu sein. Ein \emph{Trial and Error}-Ansatz mit
+  \code{terraform apply} und \code{terraform destroy} ist also sehr
+  zeitintensiv.
+\end{description}
+
+Trotzdem hat sich dieser Weg gelohnt, denn so konnten die Einzelteile des
+Systems besser verstanden und auf den eigenen
+Use Case ausgerichtet werden.
+
+\subsection{Wirtschaftlichkeit}
+
+Finanziell l\"asst sich zusammenfassend sagen, dass eine Migration zu Kubernetes
+erst ab einem gewissen Volumen an Traffic wirklich Sinn macht, denn die
+etcd-Server und Mindestanforderung an Kubernetes-Server verursachen fixe
+Kosten, die bei dem vorherigen
+Setup nicht entstanden sind.
+
+Trotz h\"oherer Kosten bei kleinen Projekten, kann sich eine Migration trotzdem
+auszahlen. So zum Beispiel, wenn die Kubernetes Features f\"ur dieses Projekt
+einen so hohen Mehrwert bringen, dass \"uber die zus\"atzlichen Kosten
+hinweggesehen werden kann, oder, wenn damit gerechnet wird, dass in naher
+Zukunft der Traffic weiter ansteigt.
+
+F\"ur dieses spezielle Projekt ist die Wirtschaftlichkeit fraglich, denn einen
+großen Kostenvorteil hat die Migration nicht geschaffen und mit allen Features,
+die in dieser Arbeit implementiert wurden, sind die Kosten sogar deutlich h\"oher.
+
+So kann festgestellt werden: Desto mehr Traffic und desto gr\"oßer die Fluktuation
+des Traffics, desto besser k\"onnen
+\quotes{Skaleneffekte} \cite{cloudmigra}
+genutzt werden und desto mehr lohnt sich eine
+Migration auch finanziell.
+
+Die Firma Monzo beispielsweise konnte durch eine
+Migration zu Kubernetes die
+Infrastruktur-Kosten um 75\% senken \cite{bankingbackend}.
+
+\subsection{Mehrwert dieses Setups}
+
+Die Anforderungen an dieses Cluster konnten größtenteils erf\"ullt werden.
+Insgesamt ist eine sehr robuste L\"osung entstanden.
+Durch die Verwendung dieser Kombination an Technologien, ergibt sich ein neues Paradigma
+und eine Reihe von Features, die vorher so nicht zur Verf\"ugung standen.
+
+Um zu verdeutlichen, wie viel Nutzen diese Features mit sich bringen, sollen
+hier nochmal die wichtigsten Punkte aufgelistet werden.
+
+\paragraph{Terraform:}
+\begin{itemize}
+  \item Infrastructure as Code
+  \item Immutable und deklarative Konfiguration
+\end{itemize}
+
+\paragraph{AWS:}
+\begin{itemize}
+  \item API f\"ur Terraform
+  \item Auto Scaling Groups
+  \item VPC und Security Groups
+\end{itemize}
+
+\paragraph{Docker:}
+\begin{itemize}
+  \item Paketierung der Applikationen
+  \item Speicherung und Verteilung der Images
+  \item Runtime f\"ur den Betrieb der Container
+  \item Security durch Host-Isolation
+  \item Portabilit\"at und Konsistenz durch Abstraktion des Host-Systems
+\end{itemize}
+
+\paragraph{CoreOS:}
+\begin{itemize}
+  \item Spezialisierung auf Container-Betrieb
+  \item Verteilter konsistener Key/Value-Store durch \emph{etcd}
+  \item Network-Overlay durch \emph{flannel}
+  \item Update-Strategie durch \emph{locksmith}
+  \item Initialisierung durch \emph{Cloud-Config} und \emph{systemd}
+\end{itemize}
+
+\paragraph{Kubernetes:}
+\begin{itemize}
+  \item Auto Scaling von Pods und Nodes
+  \item API-Schnittstelle
+  \item Service Discovery
+  \item Load Balancing
+  \item Logging
+  \item Monitoring
+  \item Konfigurations-Management
+  \item Deklarative Deployments
+  \item Rolling Updates
+  \item Health Check
+  \item Auto Recovery
+  \item Einbindung peristenter Datentr\"ager
+  \item Namespace-Isolierung
+\end{itemize}
+
+Anhand dieser Aufz\"ahlungen soll verdeutlicht werden, dass diese Komponenten
+den kompletten Lifecycle des Betriebes eines Clusters in der Cloud abdecken.
+
+Kubernetes stellt damit ein Grundger\"ust zur Verf\"ugung, schr\"ankt
+durch dieses aber kaum ein und erlaubt weiterhin viel Flexibilit\"at
+in der Ausarbeitung von L\"osungen f\"ur den jeweiligen Use Case.
+
+In der Migration zu Kubernetes ist das Aufsetzen des Clusters
+selbst immer noch eines der gr\"oßten Schwierigkeiten
+und f\"uhrt entsprechend auch zu einer langsameren Adaption dieser Technologie.
+
+Diese Arbeit hat mit der Ausarbeitung der Installation
+mit gegebenen Technologie-Stack weiter dazu beigetragen,
+dass die Installation eines solchen Clusters,
+besser dokumentiert ist und kann nun als Vorlage f\"ur \"ahnliche
+Ans\"atze verwendet werden.
+
+Teile des Codes dieser Ausarbeitung wurden auf Github
+ver\"offentlicht \cite{steph}
+und haben
+von der Ver\"offentlichung am 14. Dezember 2016 bis zum Tag der Einreichung
+dieser Arbeit am 8. M\"arz 2017 bereits 12 Stars und 3 Watcher gewonnen.
+Zudem ist bekannt, dass zwei Berliner Firmen, Stellen dieses Repositories
+f\"ur die eigene Implementierung \"ubernommen haben.
+Dies zeigt, welches Interesse aktuell bez\"uglich Kubernetes und dieser
+Kombination an Technologien besteht und, dass die erarbeitete Herangehensweise
+als Blaupause f\"ur andere Projekte dienen kann.
+
+\section{Ausblick}
+
+Auch, wenn das Ergebnis dieser Arbeit sehr zufriedenstellend ist, gibt es
+weitere Punkte, die in Angriff genommen werden sollten, sobald das Cluster, wie
+hier beschrieben, aufgesetzt wurde.
+
+\subsection{Fine-tuning der automatischen Skalierung}
+
+Die automatische Skalierung der Pods und der Nodes hat in den Tests gut funktioniert.
+Auf lange Sicht werden sich, basierend auf Erfahrungen aus dem Live-Betrieb,
+sicherlich noch bessere Einstellungen finden lassen.
+
+\subsection{Konfiguration von Alerting, Logging und Monitoring}
+
+Um die Alerting-, Logging- und Monitoring-Tools in ihrem vollen
+Funktionsumfang nutzen zu k\"onnen, sollten diese noch weiter konfiguriert
+und an den Use Case angepasst werden.
+
+\subsection{PostgreSQL-Cluster}
+
+Um die Leistungsf\"ahigkeit und Ausfallsicherheit der Datenbank zu
+erh\"ohen, k\"onnen weitere Pods integriert werden, die dann als
+Read-Slaves oder Hot-Standby fungieren. F\"ur den Use Case dieser
+Arbeit war ein solches Setup jedoch (noch) nicht erforderlich.
+
+\subsection{Regions und Availability Zones}
+
+Eine Achillesferse der Ausfallsicherheit dieser Umsetzung ist die Tatsache,
+dass es in nur einer \emph{Availability Zone} in der Frankfurt \emph{Region} deployed
+wird. Sollte diese \emph{Availability Zone} oder die ganze \emph{Region}
+ausfallen, w\"urde damit auch
+das Cluster ausfallen.
+Je nach Anspruch an die Ausfallsicherheit eines solchen Clusters sollte in Betracht
+gezogen werden, das Cluster \"uber mehrere \emph{Availability Zones}
+und eventuell sogar \emph{Regions} (in Extremf\"allen auch IaaS-Provider) auszubreiten
+\cite{arch4scale}.
+Aufgrund der zeitlichen und finanziellen Rahmenbedingungen
+dieser Arbeit, ist dies jedoch nicht umgesetzt worden.

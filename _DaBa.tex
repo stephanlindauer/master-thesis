@@ -1,0 +1,64 @@
+\documentclass[master,german]{hgbthesis}
+
+\usepackage{url}
+\usepackage{tcolorbox}
+
+\usepackage{setspace}
+
+
+\onehalfspacing
+
+\RequirePackage[utf8]{inputenc}		% Bei der Verw. von lualatex oder xelatex entfernen!
+
+\graphicspath{{images/}}
+\logofile{logo}
+\bibliography{literatur}
+
+\title{Migration zu Kubernetes: Anforderungen, Umsetzung und Auswertung}
+\author{Stephan Lindauer}
+\studiengang{Internationaler Studiengang Medieninformatik}
+\studienort{Berlin}
+\abgabedatum{2017}{03}{08}
+
+\nummer{s0547618}
+\semester{Wintersemester 2016/2017}
+\betreuer{Prof. Dr. Gefei Zhang}
+
+\begin{document}
+
+
+\definecolor{light-gray}{gray}{0.90}
+
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+\newcommand{\quotes}[1]{``#1''}
+
+\frontmatter
+
+\maketitle
+
+\include{front/abstract}
+
+\tableofcontents
+
+\include{front/vorwort}
+
+\mainmatter
+
+\include{chapters/1_einleitung}
+\include{chapters/2_anforderungen}
+\include{chapters/3_umsetzung}
+\include{chapters/4_auswertung}
+\include{chapters/6_ausblick}
+\include{chapters/7_fazit}
+
+\appendix
+
+\include{back/anhang_glossar}
+\include{back/anhang_sd-karte}
+
+
+\listoftables
+\listoffigures
+
+\MakeBibliography
+\end{document}

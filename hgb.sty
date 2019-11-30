@@ -1,0 +1,236 @@
+%% File encoding: ASCII
+
+\NeedsTeXFormat{LaTeX2e}
+\newcommand{\hgbDate}{2015/11/04}
+\ProvidesPackage{hgb}[\hgbDate]
+
+\DeclareOption{english}{\providecommand{\hgb@MainLanguage}{english}}
+\DeclareOption{german}{\providecommand{\hgb@MainLanguage}{german}}
+\ProcessOptions\relax
+
+\RequirePackage{lmodern}
+\RequirePackage{cmap}
+\RequirePackage[T1]{fontenc}
+
+\RequirePackage{ifthen}
+
+\RequirePackage[english,german,ngerman]{babel}
+\@ifundefined{hgb@MainLanguage}
+   {\newcommand*{\hgb@MainLanguage}{german}}
+	 {}
+
+
+\ifthenelse{\equal{\hgb@MainLanguage}{german}}
+	{\main@language{ngerman}}{}
+\ifthenelse{\equal{\hgb@MainLanguage}{english}}
+	{\main@language{english}}{}
+
+
+\RequirePackage{datetime}
+\RequirePackage{upquote}
+\RequirePackage{eurosym}
+
+\RequirePackage{graphicx}
+\RequirePackage[percent]{overpic}
+\RequirePackage{pict2e}
+
+\RequirePackage{xcolor}
+\newcommand{\@MissingArg}[1]{\textcolor{red}{#1}}
+
+\RequirePackage[T1,hyphens,obeyspaces,spaces,lowtilde]{url}
+\urlstyle{sf}
+
+\RequirePackage{verbatim}
+\RequirePackage{moreverb}
+\def\verbatimtabsize{2\relax}
+
+\RequirePackage{ifpdf}
+\ifpdf
+  \RequirePackage{epstopdf}
+\else
+  \RequirePackage[hyphenbreaks]{breakurl}
+\fi
+
+\RequirePackage[unicode]{hyperref}
+\hypersetup{
+	linktocpage = true,
+  colorlinks = false,
+	pdfborder = {0 0 0.5},
+	allbordercolors = {0 0 0.8},
+	breaklinks = true
+}
+
+
+\RequirePackage[figure,table,table*]{hypcap}
+
+\RequirePackage{amsmath,amsfonts,amssymb,amsbsy}
+\RequirePackage{subdepth}
+\RequirePackage{exscale}
+
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Cpx}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+
+
+\newenvironment{english}%
+{\begin{otherlanguage}{english}}%
+{\end{otherlanguage}}
+
+\newenvironment{german}%
+{\begin{otherlanguage}{ngerman}}%
+{\end{otherlanguage}}
+
+
+\newcommand\trennstrich{%
+  \nopagebreak[4]
+  \vskip 1.5ex %
+  \noindent\makebox[\textwidth]{\rule{4cm}{0.4pt}}
+  \vskip 2.5ex}
+
+\newcommand{\SuperPar}[0]{%
+\par\bigskip\noindent%
+}
+
+\newcommand{\Messbox}[2]{
+\setlength{\unitlength}{1.0mm}%
+\begin{picture}(#1,#2)%
+\linethickness{0.05mm}%
+\put(0,0){\dashbox{0.2}(#1,#2)%
+{\parbox{#1mm}{%
+\centering\footnotesize
+%{\bf MESSBOX}\\
+Breite $ = #1 {\rm\ mm}$\\
+H\"ohe $ = #2 {\rm\ mm}$
+}}}\end{picture}
+}
+
+\newcommand{\ShowParameter}[1]{\the#1\showthe#1} % to display TeX parameters
+
+\frenchspacing
+\setlength{\parskip}{0pt plus 0.1pt}
+\raggedbottom
+
+\RequirePackage{float}
+
+\floatstyle{plain}
+
+\RequirePackage[small,bf]{caption}
+\setlength{\captionmargin}{5mm}
+\setlength{\abovecaptionskip}{10pt}
+\setlength{\belowcaptionskip}{10pt}
+
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.7}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+
+\RequirePackage{enumitem}
+\setlist{
+	partopsep = .0ex plus .1ex,
+	topsep = .6ex plus .3ex,
+	itemsep = .0ex plus .1ex,
+	parsep = .4ex plus .2ex
+}
+
+\newenvironment{nowidows}
+	{\clubpenalty=10000
+	\widowpenalty=10000
+	\displaywidowpenalty=10000}
+	{}
+
+\@ifundefined{chapter}
+  {\RequirePackage[ruled]{algorithm}}
+	{\RequirePackage[ruled,chapter]{algorithm}}
+
+\DeclareCaptionStyle{ruled}{labelfont=bf,labelsep=colon}
+
+\RequirePackage{algorithmicx}
+\RequirePackage{algpseudocode}
+\algsetlanguage{pseudocode}
+\renewcommand{\algorithmicprocedure}{}
+
+
+\@ifundefined{chapter}
+   {\newfloat{program}{tbp}{lop}}
+	 {\newfloat{program}{tbp}{lop}[chapter]}
+\floatstyle{plain}
+\restylefloat*{program}
+
+\ifthenelse{\equal{\bbl@main@language}{german} \or \equal{\bbl@main@language}{ngerman}}
+{	\floatname{program}{Programm}
+  \floatname{algorithm}{Algorithmus}
+}{}
+
+\ifthenelse{\equal{\bbl@main@language}{english}}
+{	\floatname{program}{Program}
+  \floatname{algorithm}{Algorithm}
+}{}
+
+\RequirePackage{datetime}
+\showdowfalse
+
+\newcommand*{\@modifydate}[4]{
+\@namedef{date@#1@d}{#2}
+\@namedef{date@#1@m}{#3}
+\@namedef{date@#1@y}{#4}
+}
+
+\newdate{hgb@date}{\the\day}{\the\month}{\the\year}
+\newcommand{\Date}[3]{
+  \@modifydate{hgb@date}{#1}{#2}{#3}
+}
+
+\newcommand{\hgb@GetDateDay}{\getdateday{hgb@date}}
+\newcommand{\hgb@GetDateMonth}{\getdatemonth{hgb@date}}
+\newcommand{\hgb@GetDateYear}{\getdateyear{hgb@date}}
+\newcommand{\hgb@DisplayDate}{\displaydate{hgb@date}}
+
+\newenvironment{NarrowList}
+{\begin{list}{}
+{\setlength{\leftmargin}{2.5em}
+ \setlength{\labelwidth}{1em}
+ \setlength{\labelsep}{0.5em}
+ \setlength{\itemsep}{0.5ex}
+ \setlength{\parsep}{0ex}
+ \setlength{\topsep}{0ex}
+\raggedright
+}}
+{\end{list}}
+
+\newenvironment{FileList}[1]
+{\paragraph{Pfad:} \url{#1}
+ \begin{list}{}
+{\setlength{\leftmargin}{5cm}
+ \setlength{\labelwidth}{4cm}
+ \setlength{\labelsep}{0.25cm}
+ \setlength{\rightmargin}{0cm}
+ \setlength{\itemindent}{0cm}
+ \setlength{\itemsep}{0.5ex}
+ \setlength{\parsep}{0ex}
+ \setlength{\topsep}{1ex}
+\raggedright
+}}
+{\end{list}}
+
+\def\widedotfill{\leaders\hbox to 8pt{\hfil.\hfil}\hfill}
+
+\newcommand{\fitem}[1]{
+\item[\url{#1}\widedotfill]
+}
+
+\newcommand{\Frametext}[1]{
+\setlength{\fboxrule}{0.05mm}
+\setlength{\fboxsep}{0.5mm}
+\fbox{\vphantom{Ag}#1}
+}
+
+\newcommand{\FramePic}[1]{
+\setlength{\fboxrule}{0.1mm}
+\setlength{\fboxsep}{0mm}
+\fbox{#1}
+}
